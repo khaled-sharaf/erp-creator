@@ -1,0 +1,83 @@
+
+
+@import './pdf-style';
+
+
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+
+.page-header {
+    height: 50px;
+    .pdf-title {
+        float: right;
+        text-align: left;
+        color: #000;
+        width: 110px;
+        .line {
+            font-size: 11px;
+        }
+    }
+}
+
+
+
+.wrapper-content {
+    .content {
+        .page-title {
+            margin-top: 10px;
+            margin-bottom: 0;
+            font-size: 20px;
+            color: $mainColor;
+            .border {
+                width: 190px;
+                margin: 3px auto;
+                height: 2px;
+                background-color: $mainColorDark;
+            }
+        }
+
+        .receipt-id {
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .receipt-lines {
+            .line {
+                color: $mainColorDark;
+                font-size: 14px;
+                margin-bottom: 5px;
+                padding: 5px;
+                padding-bottom: 10px;
+                font-weight: bold;
+                &.border {
+                    border-bottom: 1px solid #CCC;
+                }
+                .title {
+                    display: inline-block;
+                    color: $mainColor;
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        .signatures {
+            border-top: 1px solid $mainColorDark;
+            padding-top: 15px;
+            .signature {
+                width: 50%;
+                text-align: center;
+                float: right;
+                .title {
+
+                }
+                .signature-place {
+
+                }
+            }
+        }
+    }
+}

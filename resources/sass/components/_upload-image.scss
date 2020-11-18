@@ -1,0 +1,164 @@
+
+// style photos
+$height: 150px;
+$heightImage: 140px;
+
+.wrapper-drop-image {
+    min-height: $height;
+    border: 3px dashed #999;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    background-color: #f9f9f9;
+    .help-block.invalid-feedback {
+        position: relative;
+        top: 32px;
+        font-size: 12px;
+    }
+    .overlay-drop-image {
+        z-index: 10;
+        transition: all 0.1s ease-in-out;
+        transform-origin: center center;
+        width: 100%;
+        min-height: $height;
+        .view-overlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: $height;
+            cursor: pointer;
+            margin: 0;
+            .content-overlay {
+                color: #999;
+                text-align: center;
+                transition: all 0.1s ease-in-out;
+                .icon {
+                    font-size: 60px;
+                    display: block;
+                }
+                .title {
+                    display: block;
+                    font-size: 12px;
+                    margin: 10px 0;
+                }
+            }
+        }
+        .view-images {
+            background-color: #f9f9f9;
+            padding: 7px;
+            display: none;
+            .image {
+                height: $heightImage;
+                margin: 3px;
+                border-radius: 3px;
+                display: inline-block;
+                vertical-align: top;
+                .img {
+                    height: $heightImage;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &:hover {
+                        .remove-image {
+                            transform: scale(1);
+                        }
+                    }
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                        border-radius: 3px;
+                    }
+                    .remove-image {
+                        position: absolute;
+                        top: -10px;
+                        right: -7px;
+                        width: 22px;
+                        height: 22px;
+                        text-align: center;
+                        line-height: 22px;
+                        border-radius: 50%;
+                        background-color: #FFF;
+                        border: 1px solid #999;
+                        color: #a51e1e;
+                        font-size: 15px;
+                        cursor: pointer;
+                        transform: scale(0);
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    .custom-file-drop {
+        z-index: -1;
+        position: absolute;
+        transform: scale(0);
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    &.single-image {
+        .view-images {
+            text-align: center;
+            .image, .image .img{
+                height: $heightImage;
+            }
+        }
+    }
+    &.is-dragover {
+        background-color: #DDD;
+        border-color: #3498db;
+        .overlay-drop-image {
+            transform: scale(0.85);
+            .content-overlay {
+                color: #777;
+            }
+        }
+    }
+    &.is-invalid {
+        border-color: #e3342f;
+    }
+    &.contains-image {
+        border-color: #999; 
+        &:hover {
+            .view-overlay {
+                transform: scale(1);
+            }
+
+        }
+        .view-overlay {
+            // min-height: 100px;
+            // border-top: 2px dashed #999;
+
+            position: absolute;
+            bottom: -43px;
+            left: 0;
+            z-index: 100;
+            width: 100%;
+            height: 40px;
+            min-height: auto;
+            background-color: #DDD;
+            @include trans('0.15s');
+            transform: scale(0);
+            transform-origin: top center;
+            .content-overlay {
+                .icon {
+                    font-size: 30px;
+                    display: block;
+                    color: #DDD;
+                    display: none;
+                }
+                .title {
+                    color: #666;
+                    display: block;
+                    font-size: 12px;
+                    margin: 5px 0;
+                }
+            }
+        }
+        .view-images {
+            display: block;
+        }
+    }
+}

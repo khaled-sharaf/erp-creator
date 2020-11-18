@@ -1,0 +1,29 @@
+.main-header.navbar {
+
+    /*********************************************************************************/
+    // sidebar
+    .custom-sidebar-profile {
+        margin-right: 0 !important;
+         .dropdown-menu {
+            left: 0;
+            right: auto;
+            text-align: right;
+        }
+        @include maxSmall {
+            left: auto;
+            right: -250px;
+            &.show-sidebar {
+                right: 0;
+                left: auto;
+            }
+            .nav-item.dropdown {
+                > .nav-link {
+                    .user-image {
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
+/*********************************************************************************/

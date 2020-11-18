@@ -1,0 +1,53 @@
+$maxWidthMobile: 575.98px;
+$minWidthMobile: 576px;
+$maxWidthSmall: 767.98px;
+$minWidthSmall: 768px;
+$maxWidthMedium: 991.98px;
+$minWidthMedium: 992px;
+$maxWidthLarge: 1199.98px;
+$minWidthLarge: 1200px;
+
+$allPrefixes: webkit moz o;
+
+$redColor: #db125f;
+$greyColor: #9c9c9c;
+
+$floatL: left;
+$floatR: right;
+
+$posL: left;
+$posR: right;
+
+$textL: left;
+$textR: right;
+
+$left: left;
+$right: right;
+
+@if $lang == rtl {
+    $floatL: right;
+    $floatR: left;
+    $posL: right;
+    $posR: left;
+    $textL: right;
+    $textR: left;
+    
+    $left: right;
+    $right: left;
+} @else if $lang == ltr {
+    $floatL: left;
+    $floatR: right;
+    $posL: left;
+    $posR: right;
+    $textL: left;
+    $textR: right;
+    
+    $left: left;
+    $right: right;
+}
+
+
+
+$mainColor: #e8b339;
+$mainColorDark: #9f5412;
+$colorFooter: #613b1a;

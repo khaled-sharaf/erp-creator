@@ -1,0 +1,135 @@
+.page-break {
+    page-break-after: always;
+}
+.page-before {
+    page-break-before: always;
+}
+
+
+$mainColor: #EC2028;
+$mainColorDark: #333;
+
+
+.main-color {
+    color: $mainColor;
+}
+.main-color-dark {
+    color: $mainColorDark;
+}
+
+.main-bg {
+    background-color: $mainColor;
+}
+.main-bg-dark {
+    background-color: $mainColorDark;
+}
+
+
+@page {
+	header: page-header;
+	footer: page-footer;
+    margin: 1cm;
+}
+
+body {
+    font-family: 'XB Riyaz', sans-serif;
+    font-size: 13px;
+}
+
+@for $i from 1 through 10 {
+    .separator-margin-#{$i * 10} {
+        margin-top: #{$i * 10}px;
+        margin-bottom: #{$i * 10}px;
+    }
+}
+
+.border-center {
+    border-top: 1px solid #BBB;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+
+.f-left { float: left !important; }
+.f-right { float: right !important; }
+
+.ltr { direction: ltr !important; }
+.rtl { direction: rtl !important; }
+
+.line {
+    line-height: 1.5;
+    b {
+        color: $mainColorDark;
+        font-size: 110%;
+    }
+    .line-number {
+        color: $mainColor;
+        font-weight: bold;
+    }
+}
+.bold { font-weight: bold; }
+.mark-red { color: #cf1938 !important; }
+.text-center { text-align: center !important; }
+.title-center {
+    font-size: 17px !important;
+    margin-bottom: 5px;
+    .text {
+        // margin: auto;
+        // width: 100px;
+        // border-bottom: 2px solid #cf1938;
+        // padding: 1px;
+    }
+ }
+
+
+@for $i from 1 through 100 {
+    .mt-#{$i} {
+        margin-top: #{$i}px;
+    }
+}
+@for $i from 1 through 100 {
+    .mb-#{$i} {
+        margin-bottom: #{$i}px;
+    }
+}
+
+
+.page-header {
+    height: 60px;
+    .pdf-title {
+        width: 30%;
+        float: right;
+        .title {
+            font-size: 23px;
+            line-height: 50px;
+            margin: 0;
+            display: inline-block;
+            color: $mainColorDark;
+            // background-color: $mainColorDark;
+            border-bottom: 2px solid $mainColorDark;
+            padding: 0 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .line {
+            a {
+                color: #444;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .logo {
+        width: 40%;
+        float: left;
+    }
+}
+
+.subtitle {
+    color: #444;
+    font-size: 18px;
+    text-align: center;
+}

@@ -1,0 +1,239 @@
+// media query
+@mixin maxMobile {
+    @media (max-width: $maxWidthMobile) {
+        @content;
+    }
+}
+@mixin minMobile {
+    @media (min-width: $minWidthMobile) {
+        @content;
+    }
+}
+@mixin maxSmall {
+    @media (max-width: $maxWidthSmall) {
+        @content;
+    }
+}
+@mixin minSmall {
+    @media (min-width: $minWidthSmall) {
+        @content;
+    }
+}
+@mixin maxMedium {
+    @media (max-width: $maxWidthMedium) {
+        @content;
+    }
+}
+@mixin minMedium {
+    @media (min-width: $minWidthMedium) {
+        @content;
+    }
+}
+@mixin maxLarge {
+    @media (max-width: $maxWidthLarge) {
+        @content;
+    }
+}
+@mixin minLarge {
+    @media (min-width: $minWidthLarge) {
+        @content;
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// prefix
+@mixin pfx($prop, $value, $prefixs: $allPrefixes) {
+    @each $prefix in $prefixs {
+        #{'-' + $prefix + '-' + $prop}: #{$value};
+    }
+    #{$prop}: #{$value};
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// transitions
+@mixin trans($prop_and_time, $effect: ease-in-out) {
+    @include pfx(transition, #{$prop_and_time} #{$effect});
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Box Shadow Depth
+@mixin shadow($level: 1) {
+    @if $level == 0 {
+        @include pfx(box-shadow, 'none !important');
+    } @else if $level == 1 {
+        @include pfx(box-shadow, '0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)');
+    } @else if $level == hoverlvl1 {
+        @include pfx(box-shadow, '0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2)');
+    } @else if $level == 2 {
+        @include pfx(box-shadow, '0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3)');
+    } @else if $level == 3 {
+        @include pfx(box-shadow, '0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3)');
+    } @else if $level == 4 {
+        @include pfx(box-shadow, '0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3)');
+    } @else if $level == 5 {
+        @include pfx(box-shadow, '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3)');
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// border arrow
+@mixin arrowCss($dir, $pseudo, $top, $right, $bottom, $left, $color, $size, $sizeDynamicWidth: true) {
+    $sizeWidth: $size + ($size / 4);
+    @if $sizeDynamicWidth == false {
+        $sizeWidth: $size;
+    }
+    &:#{$pseudo} {
+        content: '';
+        display: block;
+        z-index: 10;
+        position: absolute;
+        // Set Arrow in center
+        ///////////////////////////////////////////////////
+        @if $dir == top or $dir == bottom { // Top And Bottom
+            @if $left == center {
+                right: auto !important;
+                left: 50%;
+                margin-left: -($sizeWidth);
+            } @else if $right == center {
+                right: 50%;
+                left: auto !important;
+                margin-right: -($sizeWidth);
+            } @else {
+                right: #{$right};
+                left: #{$left};
+            }
+            top: #{$top};
+            bottom: #{$bottom};
+            // Set Direction
+            /////////////////////////////////////////////////////
+            border: {  // Top And Bottom
+                @if $dir == top {
+                    bottom: $size solid $color;
+                } @else if $dir == bottom {
+                    top: $size solid $color;
+                }
+                left: $sizeWidth solid transparent;
+                right: $sizeWidth solid transparent;
+            }
+        } @else if $dir == left or $dir == right { // Left And Right
+            @if $top == center {
+                bottom: auto !important;
+                top: 50%;
+                margin-top: -($sizeWidth);
+            } @else if $bottom == center {
+                bottom: 50%;
+                top: auto !important;
+                margin-bottom: -($sizeWidth);
+            } @else {
+                top: #{$top};
+                bottom: #{$bottom};
+            }
+            right: #{$right};
+            left: #{$left};
+            // Set Direction
+            /////////////////////////////////////////////////////
+            border: { // Left And Right
+                @if $dir == left {
+                    right: $size solid $color;
+                } @else if $dir == right {
+                    left: $size solid $color;
+                }
+                top: $sizeWidth solid transparent;
+                bottom: $sizeWidth solid transparent;
+            }
+        }
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// overlay
+@mixin overlay($fixed, $layer, $bgColor, $textColor: #EEE) {
+    position: #{$fixed};
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #{$bgColor};
+    color: #{$textColor};
+    z-index: #{$layer};
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Keyframes
+@mixin keyFrame($keyname) {
+    @-webkit-keyframes #{$keyname} {
+        @content;
+    }
+    @-moz-keyframes #{$keyname} {
+        @content;
+    }
+    @-o-keyframes #{$keyname} {
+        @content;
+    }
+    @keyframes #{$keyname} {
+        @content;
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Clear fix
+@mixin clearfix {
+    &:after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Gradient
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// scrollBar
+@mixin scrollbars($size, $frontground-color: #444, $borderRadius: 0, $background-color: mix($frontground-color, white, 30%)) {
+    &::-webkit-scrollbar {
+        width:  $size;
+        height:  $size;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $frontground-color;
+        border-radius: $borderRadius;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $background-color;
+        @include pfx(box-shadow, inset 0 0 6px rgba(0,0,0,0.3));
+        border-radius: $borderRadius;
+    }
+    // For Internet Explorer
+    scrollbar-face-color: $frontground-color;
+    scrollbar-track-color: $background-color;
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Card Stack
+@mixin cardStack($card-color: white, $shadow-color: black) {
+	box-shadow: 0 0.0625em 0.1875em 0 rgba( $shadow-color, 0.1 ),
+	            0 0.5em 0 -0.25em rgba( $card-color, 0.5),
+	            0 0.5em 0.1875em -0.25em rgba( $shadow-color, 0.1 ),
+	            0 1em 0 -0.5em rgba( $card-color, 0.3),
+	            0 1em 0.1875em -0.5em rgba( $shadow-color, 0.1 );
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Text Shadow (long)
+@function makelongshadow($color, $length) {
+    $val: 0px 0px $color;
+    @for $i from 1 through $length {
+        $val: #{$val}, #{$i}px #{$i}px #{$color};
+    }
+    @return $val;
+}
+
+@mixin longshadow($color, $length: 100) {
+    text-shadow: makelongshadow($color, $length);
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+

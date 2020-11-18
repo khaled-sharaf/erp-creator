@@ -1,0 +1,1733 @@
+{
+    "global": {
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "user": "user",
+        "name": "Name",
+        "total": "Total",
+        "info": "Info",
+        "infor": "Information",
+        "infors": "Informations",
+        "company": "Company",
+        "type": "type",
+        "setting": "setting",
+        "button": "Button",
+
+        "no_products": "No products",
+        "no_users": "No employees",
+        "no_comments": "No comments",
+        "no_winners": "No winners",
+        "no_product_details": "No product details",
+
+        "profile": "profile",
+        "the_profile": "the profile",
+        "edit_profile": "Edit profile",
+        "view_profile": "View profile",
+        "user_profile": "View profile",
+        "lead_profile": "Lead profile",
+        "client_profile": "Client profile",
+        "contract_profile": "Contract profile",
+        "quotation_profile": "Quotation profile",
+
+        "project_profile": "Project profile",
+
+        "bank_profile": "Bank profile",
+        "cash_profile": "Cash profile",
+        "partner_profile": "Partner profile",
+        "supplier_profile": "Supplier profile",
+        "purchase_order_profile": "Purchase order profile",
+
+        "model_is_deleted": "Is Deleted",
+
+
+        "logout": "Logout",
+        "create": "Create",
+        "create_again": "Create Again",
+        "edit": "Edit",
+        "update": "update",
+        "save": "Save",
+        "read": "Read",
+        "toggle": "Toggle",
+        "actions": "Actions",
+        "action": "Action",
+        "add_all": "Add all",
+        "all": "All",
+        "n_all": "All",
+        "read_more": "Read more",
+        "more_info": "More info",
+        "choose_image": "Choose image",
+        "drag_msg": "Drag and drop file here",
+        "choose_file": "Choose file",
+        "download": "Download",
+        "download_all": "Download all",
+        "download_file": "Download file",
+        "download_logo_src": "Download logo source",
+        "download_image": "Download image",
+        "to_mail": "to mail",
+        "to_whatsapp": "to whatsapp",
+        "renewal": "Renewal",
+
+        "none_status": "None status",
+
+        "items": "Items",
+        "item": "Item",
+        "left": "Left",
+
+        "active": "Active",
+        "completed": "Completed",
+        "clear_completed": "Clear completed",
+        "disactive": "Disactive",
+        "activate": "Activate",
+        "activation": "Activation",
+        "activated_at": "Activated at",
+        "accepted_at": "Accepted at",
+        "accepte": "Accepte",
+        "accepte_now": "Accepte now",
+        "done_at": "Done at",
+        "in_progress": "In progress",
+        "available": "Available",
+        "unavailable": "Unavailable",
+
+        "hidden": "Hidden",
+        "visible": "Visible",
+
+        "show": "Show",
+        "send": "Send",
+        "hide": "Hide",
+        "view": "View",
+        "donwload": "Donwload",
+        "close": "Close",
+        "display": "Display",
+        "from": "From",
+        "to": "To",
+        "in": "In",
+        "on": "On",
+        "or": "Or",
+        "with": "With",
+        "yes": "Yes",
+        "no": "No",
+
+        "delete": "Delete",
+        "deleted": "Deleted",
+        "force_delete": "Force delete",
+        "remove": "Remove",
+        "removed": "Removed",
+        "restore": "Restore",
+        "restored": "Restored",
+        "failed": "Failed",
+        "cancel": "Cancel",
+        "undefined": "Undefined",
+
+        "meeting": "Meeting",
+        "next_meeting": "Next meeting",
+        "contract": "Contract",
+        "payments": "Payments",
+        "view_payments": "View payments",
+        "invoice": "Invoice",
+        "lead": "Lead",
+        "client": "Client",
+
+        "yes_delete_it": "Yes, delete it",
+        "yes_remove_it": "Yes, remove it",
+        "yes_restore_it": "Yes, restore it",
+
+        "settings_table": "Settings table {model} on all screens",
+
+        "notifications": "Notifications",
+        "the_notifications": "Notifications",
+        "notification": "Notification",
+        "all_notifications": "All notifications",
+        "the_messages": "Messages",
+        "all_messages": "All messages",
+        "latest_messages": "Latest Messages",
+        "staff": "staff",
+        "clients": "Clients",
+        "vendors": "Vendors",
+
+
+
+        "notif_create_user": "A new employee was created by",
+
+        "currency": "EGP",
+
+        "year": "Year",
+        "years": "Years",
+        "month": "Month",
+        "months": "Months",
+        "day": "Day",
+        "days": "Days",
+        "hour": "Hour",
+        "hours": "Hours",
+        "minute": "Minute",
+        "minutes": "Minutes",
+        "second": "Second",
+        "seconds": "Seconds",
+
+
+
+        "location": "Location",
+        "location_map": "Location map",
+        "msg_location_map": "Find the place you want and then move the red mark on it carefully.",
+        "error_location": "Place not found, search in other words.",
+        "remove_location": "Remove location",
+        "get_current_location": "Get current location",
+        "location_actions": "Location actions",
+        "no_location": "Not found location",
+        "latitude": "Latitude",
+        "longitude": "Longitude",
+
+
+        "payment_methods": {
+            "cash": "Cash",
+            "bank": "Bank",
+            "partner_drawing": "Partner drawing"
+        },
+
+        "projects_posts_type": {
+            "single": "single",
+            "grouped": "grouped",
+            "cover_post": "cover post"
+        },
+
+        "requests_types": {
+            "1": "casual vacation",
+            "2": "medical issues",
+            "3": "travel",
+            "4": "permission",
+            "5": "check in",
+            "6": "check out"
+        },
+
+        "accounts_types": {
+            "saving": "Saving account",
+            "current": "Current account",
+            "joint": "Joint partner",
+            "recom": "Recommended partner"
+        },
+
+        "logo_profile": "Logo Details",
+        "hosting_profile": "Host profile",
+
+        "website_profile": "Website Details",
+        "": "",
+        "": ""
+    },
+
+
+
+    "messages": {
+        "delete_msg": "Are you sure to delete this element?",
+        "delete_success_msg": "The element has been deleted.",
+        "delete_failed_msg": "The element has not been deleted.",
+
+        "force_delete_msg": "Are you sure to remove this element?",
+        "force_delete_success_msg": "The element has been removed.",
+        "force_delete_failed_msg": "The element has not been removed.",
+
+        "restore_msg": "Are you sure to restore this element?",
+        "restore_success_msg": "The element has been restored.",
+        "restore_failed_msg": "The element has not been restored.",
+
+        "multi_delete_msg": "Are you sure to delete all checked elements?",
+        "multi_delete_success_msg": "All elements checked as deleted.",
+        "multi_delete_failed_msg": "Not all checked elements have been deleted.",
+
+        "multi_force_delete_msg": "Are you sure to permanently remove all checked elements?",
+        "multi_force_delete_success_msg": "All checked elements have been permanently removed.",
+        "multi_force_delete_failed_msg": "Not all checked elements have been removed.",
+
+        "multi_restore_msg": "Are you sure to restore all checked elements?",
+        "multi_restore_success_msg": "All elements checked as restored.",
+        "multi_restore_failed_msg": "Not all checked elements have been restored.",
+
+
+
+        "change_lead_status_success_msg": "Lead status has been successfully updated",
+        "change_lead_status_failed_msg": "Lead status was not updated",
+
+        "change_client_status_success_msg": "Client status has been successfully updated",
+        "change_client_status_failed_msg": "Client status was not updated",
+
+        "change_meeting_status_success_msg": "Meeting status has been successfully updated",
+        "change_meeting_status_failed_msg": "Meeting status was not updated",
+
+        "reason_status": "Reason change status",
+        "change_meeting_status_to": "Change Meeting status to",
+
+
+        "not_found_roles": "Not found roles",
+
+
+
+        "msg_not_mail_lead_registerd": "This client does'nt have a registered email."
+
+    },
+
+
+
+
+    "sidebar": {
+        "dashboard": "Dashboard",
+
+
+
+        "hr": "HR",
+
+        "users": "Employees",
+        "all_users": "all employees",
+        "new_user": "new employee",
+        "edit_user": "Edit employee",
+
+        "departments": "Departments",
+        "new_department": "new department",
+        "edit_department": "Edit department",
+
+        "job_titles": "Job titles",
+        "add_title": "Add title",
+        "delete_title": "Delete title",
+        "new_job_title": "new job title",
+
+        "requests": "Requests",
+        "new_request": "new request",
+
+        "attendances": "Attendance",
+        "new_attendance": "new attendance",
+        "edit_attendance": "Edit attendance",
+
+        "vacations": "Vacations",
+        "new_vacation": "vacation",
+
+        "holidays": "Holidays",
+        "new_holiday": "holiday",
+
+        "evaluations": "Evaluations",
+        "new_evaluation": "new evaluation",
+
+        "payroll": "Payroll",
+
+        "contracts": "Contracts",
+        "new_contract": "new contract",
+
+        "permissions": "Permissions",
+        "roles": "Roles",
+        "new_role": "new role",
+        "edit_role": "Edit role",
+        "assign_per_to_user": "Assign permissions to user",
+        "roles_and_permissions_for_user": "Roles and permissions for user",
+
+
+
+
+        "crm": "CRM",
+
+        "leads": "Leads",
+        "all_leads": "all leads",
+        "new_lead": "new lead",
+        "edit_lead": "Edit lead",
+
+        "clients": "Clients",
+        "all_clients": "all clients",
+        "new_client": "new client",
+        "edit_client": "Edit client",
+
+
+        "meetings": "Meetings",
+        "all_meetings": "all meetings",
+        "new_meeting": "new meeting",
+        "edit_meeting": "Edit meeting",
+        "meeting_view": "Meeting view",
+
+
+        "services": "Services",
+        "all_services": "all services",
+        "new_service": "new service",
+        "edit_service": "Edit service",
+        "add_services": "Add service",
+        "delete_services": "Delete service",
+
+        "lead_contracts": "Contracts",
+        "lead_current_contracts": "Pending contracts",
+        "lead_paid_contracts": "Paid contracts",
+        "all_lead_contracts": "all contracts",
+        "new_lead_contract": "new contract",
+        "edit_lead_contract": "Edit contract",
+        "renewal_lead_contract": "Renew contract",
+        "add_terms": "Add term",
+        "delete_terms": "Delete term",
+
+
+        "quotations": "Quotations",
+        "quotation": "Quotation",
+        "all_quotations": "all quotations",
+        "new_quotation": "new quotation",
+        "edit_quotation": "Edit quotation",
+
+
+        "accounting": "Accounting",
+
+        "accounts": "Accounts",
+
+        "banks": "Banks",
+        "bank": "Bank",
+        "all_banks": "all banks",
+        "new_bank": "new bank",
+        "edit_bank": "Edit bank",
+
+        "cashs": "Cashes",
+        "cash": "Cash",
+        "all_cashs": "all cashs",
+        "new_cash": "new cash",
+        "edit_cash": "Edit cash",
+
+        "partners": "Partners",
+        "partner": "Partner",
+        "all_partners": "all partners",
+        "new_partner": "new partner",
+        "edit_partner": "Edit partner",
+
+        "payments": "Payments",
+        "payment": "Payment",
+        "all_payments": "all payments",
+        "new_payment": "new payment",
+        "edit_payment": "Edit payment",
+
+        "sales": "Sales",
+        "sales_returns": "Sales returns",
+
+        "purchases": "Purchases",
+        "purchase_returns": "Purchase returns",
+
+        "client_reports": "Client reports",
+        "supplier_reports": "Supplier reports",
+
+        "fixed_assets": "Fixed assets",
+        "fixed_asset": "Fixed asset",
+        "all_fixed_assets": "all fixed assets",
+        "new_fixed_asset": "new fixed asset",
+        "edit_fixed_asset": "Edit fixed asset",
+
+        "income_list": "Income list",
+        "budget": "Budget",
+        "taxes": "Taxes",
+
+        "expenses": "Expenses",
+        "expense": "Expense",
+        "all_expenses": "all expenses",
+        "new_expense": "new expense",
+        "edit_expense": "Edit expense",
+
+        "suppliers": "Suppliers",
+        "supplier": "Supplier",
+        "all_suppliers": "all suppliers",
+        "new_supplier": "new supplier",
+        "edit_supplier": "Edit supplier",
+
+        "purchase_orders": "Purchase orders",
+        "purchase_order": "Purchase order",
+        "all_purchase_orders": "all purchase orders",
+        "new_purchase_order": "new purchase_order",
+        "edit_purchase_order": "Edit purchase_order",
+
+
+
+        "designs": "Designs",
+        "logos": "Logos",
+        "social_media_designs": "Social media designs",
+        "printing_designs": "Printing designs",
+        "edit_logo": "Edit logo",
+
+        "new_logo": "new logo",
+        "choose_lead": "Select a lead",
+        "add_new_lead_portfolio": "Add new lead portfolio",
+        "delete_selected_items":"Delete selected items",
+        "social_media":"Social Media",
+        "add_new_media":"New Campaign",
+        "choose_designer":"Select a designer",
+        "add_new_printing":"new printing",
+        "printing_name":"Printing name",
+
+
+
+        "marketing": "Marketing",
+        "marketing_plan": "Marketing plan",
+        "business_plan": "Business plan",
+        "time_plan": "Time plan",
+        "analysis": "Analysis",
+
+
+
+        "plans": "Plans",
+
+
+        "notes": "Notes",
+        "todos": "Todos",
+
+
+
+
+        "website": "CP Website",
+
+        "website_publishing_tools": "Publishing tools",
+        "website_design_campaigns": "Design campaigns",
+        "website_offers": "Offers",
+
+
+
+        "web_development": "Web development",
+        "websites": "Websites",
+        "hostings": "Hostings",
+        "domains": "Domains",
+        "informations": "Informations",
+        "new_hosting": "New Host",
+        "edit_hosting": "Edit Host",
+
+        "new_domain": "New Domain",
+        "edit_domain": "Edit Domain",
+        "add_new_website": "Add New Website",
+
+        "web_reports": "WEB reports",
+        "domains_total_price": "Domains Total Price",
+        "hostings_total_price": "Hostings Total Price",
+
+
+
+        "calendar": "Calendar",
+        "agenda": "Agenda",
+
+        "platforms": "Platforms",
+        "all_platforms": "All platforms",
+        "new_platform": "new platform",
+        "edit_platform": "Edit platform",
+        "add_platform": "Add new platform",
+        "delete_platform": "Delete platform",
+
+        "projects_management": "Projects Management",
+        "projects": "Projects",
+        "all_projects": "All projects",
+        "new_project": "new project",
+        "edit_project": "Edit project",
+        "view_project": "View project",
+        "project_info": "Project info",
+
+
+        "tasks": "Tasks",
+        "all_tasks": "All tasks",
+        "new_task": "new task",
+        "New_task": "New task",
+        "edit_task": "Edit task",
+
+
+        "ads": "Ads",
+        "contents": "Contents",
+        "reports": "Reports",
+
+
+
+        "documents": "Documents",
+        "job_applications": "Job applications",
+        "hr_litters": "Hr litters",
+        "authorization": "Authorization",
+
+
+
+        "crm_reports": "CRM reports",
+
+
+
+        "settings": "Settings",
+        "general-settings": "General settings",
+        "all_general-settings": "General settings",
+        "new_setting": "new setting",
+        "edit_setting": "Edit setting",
+
+        "lead_statuses": "Lead statuses",
+        "add_status": "Add status",
+        "delete_status": "Delete status",
+
+        "sales_commissions": "Sales commissions",
+        "add_commission": "Add commission",
+        "delete_commission": "Delete commission",
+
+        "add_payment": "Add payment",
+        "delete_payment": "Delete payment",
+        "send_receipt": "Send receipt",
+        "receipt": "Receipt"
+
+    },
+
+
+
+
+    "datatable": {
+        "showing": "Showing",
+        "entries": "entries",
+        "from": "from",
+        "to": "to",
+        "of": "of",
+        "next": "Next",
+        "prev": "Prev",
+        "empty_table": "Empty table",
+        "no_data_msg": "No data in this table.",
+
+        "items_selected": "Items selected",
+
+        "trash": "Trash",
+        "trashed": "Trashed",
+        "not_trashed": "Not Trashed",
+
+        "all": "All",
+
+        "activation": "Activation",
+        "active": "Active",
+        "not_active": "Not Active",
+
+        "display": "Displayed",
+
+        "show": "Show",
+        "hide": "Hide",
+
+        "rules_filter": {
+            "super_admin": "Super Admin",
+            "admin": "Admin",
+            "user": "User"
+        },
+
+
+        "rules": "Rules",
+        "sold_out": "Sold out",
+        "discount": "Discount",
+        "created_between": "Created between",
+        "search": "Search",
+        "search_by": "Search By",
+        "search_tools": "Search tools",
+        "filters": "Filters",
+        "reset": "Reset",
+
+        "print": "Print"
+    },
+
+
+
+
+    "users_table": {
+        "id": "ID",
+        "name": "Name",
+        "name_ar": "Arabic name",
+        "email": "Email",
+        "password": "Password",
+        "repeat_password": "Repeat password",
+        "phone": "Phone",
+        "home_phone": "Home phone",
+        "emergency_phone": "Emergency phone",
+        "country": "Country",
+        "city": "City",
+        "address": "Address",
+        "photo": "Photo",
+        "id_cart": "Id cart",
+        "nationality": "Nationality",
+        "marital_status": "Marital status",
+        "gender": "Gender",
+        "birth_date": "Birth date",
+
+        "work_phone": "Work phone",
+        "work_email": "Work email",
+        "work_address": "Work address",
+        "bank_account_number": "Bank account number",
+        "visa_number": "Visa number",
+        "visa_expire_date": "Visa expire date",
+
+        "certificate_level": "Certificate level",
+        "school": "University / School",
+
+        "job_title_id": "Job title",
+        "department_id": "Department",
+        "work_period_id": "Work period",
+        "hiring_date": "Hiring date",
+        "salary": "Salary",
+        "documents": "Documents",
+        "show_documents": "Show documents",
+        "rule": "Rule",
+        "active": "Activation",
+
+        "document_note": "Document note",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+        "registration_data": "Registration data",
+        "personal_data": "Personal data",
+        "education": "Education",
+        "word_data": "Work data",
+        "job_data": "Job data",
+
+        "activate": {
+            "on": "Active",
+            "off": "Not active"
+        },
+
+        "rules": {
+            "super_admin": "Super Admin",
+            "admin": "Admin",
+            "user": "User"
+        },
+        "genders": {
+            "male": "Male",
+            "female": "Female",
+            "others": "Others"
+        },
+        "marital_statuses": {
+            "single": "Single",
+            "engaged": "Engaged",
+            "married": "Married",
+            "others": "Others"
+        },
+
+
+
+        "p_create": {
+            "success_msg": "New employee has been created.",
+            "failed_msg": "New employee has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The employee has been updated.",
+            "failed_msg": "The employee has been not updated."
+        }
+    },
+
+
+
+    "websites_table": {
+        "website_name": "Website Name",
+        "select_developer": "Select Developer",
+        "select_lead" : "Select Lead",
+        "new_web": "New Website",
+        "no_result_found": "No result has been found",
+        "required_lead": "Select a lead",
+        "required_user": "Select a developer",
+        "": "",
+        "p_create": {
+          "success_msg": "New website has been created.",
+          "failed_msg": "New website has been not created.",
+          "failed_file_size": "File size exceeded its limit",
+          "failed_file_msg": "Document is required"
+        },
+        "p_edit": {
+            "success_msg": "The website has been updated.",
+            "failed_msg": "The website has been not updated.",
+            "failed_file_msg": "File size exceeded its limit"
+        },
+        "p_delete": {
+          "success_msg": "Website has been Deleted.",
+          "failed_msg": "Failed to delete website"
+        }
+    },
+
+
+
+    "hostings_table": {
+      "view_hosting": "View Hosting",
+      "hosting_data": "Hosting Data",
+      "id": "ID",
+      "name": "Hosting Name",
+      "country": "Price",
+      "hiring_date": "Booking Date",
+      "email": "Renewal Date",
+      "salary": "Remaining Months",
+
+      "hosting_name": "Hosting Name",
+      "description": "Description",
+      "price": "Price",
+      "booking_date": "Booking Date",
+      "renewal_date": "Renewal Date",
+
+      "active": "Activation",
+      "actions": "Actions",
+      "activate": {
+        "on": "Active",
+        "off": "Not active"
+      },
+      "p_create": {
+        "success_msg": "New host has been created.",
+        "failed_msg": "New host has been not created."
+      },
+      "p_edit": {
+        "success_msg": "The host has been updated.",
+        "failed_msg": "The host has been not updated."
+      }
+    },
+
+
+
+    "domains_table": {
+      "view_domain": "View Domain",
+      "domain_data": "Domain Data",
+      "id": "ID",
+      "name": "Domain Name",
+      "country": "Price",
+      "hiring_date": "Booking Date",
+      "email": "Renewal Date",
+      "salary": "Remaining Months",
+
+      "domain_name": "Domain Name",
+      "description": "Description",
+      "price": "Price",
+      "booking_date": "Booking Date",
+      "renewal_date": "Renewal Date",
+
+      "active": "Activation",
+      "actions": "Actions",
+      "activate": {
+        "on": "Active",
+        "off": "Not active"
+      },
+      "p_create": {
+        "success_msg": "New host has been created.",
+        "failed_msg": "New host has been not created."
+      },
+      "p_edit": {
+        "success_msg": "The host has been updated.",
+        "failed_msg": "The host has been not updated."
+      }
+    },
+
+
+
+
+    "logos_table": {
+      "id": "ID",
+      "logo_name": "Logo Name",
+      "add_logo": "Add Logo",
+      "client_name": "Client",
+      "designer_name": "Designer",
+      "photo": "Photo",
+      "required_user": "Select a designer",
+
+      "p_create": {
+        "success_msg": "New logo has been created.",
+        "failed_msg": "New logo has been not created."
+      },
+      "p_edit": {
+        "success_msg": "The logo has been updated.",
+        "failed_msg": "The logo has been not updated."
+      }
+    },
+
+    "social_media_table": {
+      "media_name": "Campaign Name",
+      "add_new_media": "Add Campaign",
+      "p_create": {
+        "success_msg": "New media has been created.",
+        "failed_msg": "New media has been not created."
+      },
+      "p_edit": {
+        "success_msg": "The media has been updated.",
+        "failed_msg": "The media has been not updated."
+      }
+    },
+
+    "printing_table": {
+      "printing_name": "Printing",
+      "add_new": "Add Printing",
+      "p_create": {
+        "success_msg": "New printing has been created.",
+        "failed_msg": "New printing has been not created."
+      },
+      "p_edit": {
+        "success_msg": "The printing has been updated.",
+        "failed_msg": "The printing has been not updated."
+      }
+    },
+
+
+    "departments_table": {
+        "id": "ID",
+        "name": "Department name",
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+        "p_create": {
+            "success_msg": "New department has been created.",
+            "failed_msg": "New department has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The department has been updated.",
+            "failed_msg": "The department has been not updated."
+        }
+    },
+
+
+
+    "job_titles_table": {
+        "id": "ID",
+        "name": "Job title name",
+        "department_id": "department",
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions"
+    },
+
+
+
+    "requests_table": {
+        "id": "ID",
+        "user_id": "Employee",
+        "type": "Request type",
+        "from_date": "From date",
+        "to_date": "To date",
+        "description": "Request reason",
+        "status": "",
+        "reason": "Replay reason",
+        "replier_id": "Replier",
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+        "p_create": {
+            "success_msg": "New request has been created.",
+            "failed_msg": "New request has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The request has been updated.",
+            "failed_msg": "The request has been not updated."
+        }
+    },
+
+
+
+
+    "attendances_table": {
+        "id": "ID",
+        "user_id": "Employee",
+        "check_in": "Check in",
+        "check_out": "Check out",
+        "type": "Type",
+        "overtime": "Overtime",
+        "absent": "Absent",
+        "permission_type": "Permission type",
+        "permission_time": "Permission time",
+        "permission": "Permission",
+        "comment": "Comment",
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+        "p_create": {
+            "success_msg": "New attendance has been created.",
+            "failed_msg": "New attendance has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The attendance has been updated.",
+            "failed_msg": "The attendance has been not updated."
+        }
+    },
+
+
+
+
+    "roles_table": {
+        "id": "ID",
+        "name": "Role name",
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+        "p_create": {
+            "success_msg": "New role has been created.",
+            "failed_msg": "New role has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The role has been updated.",
+            "failed_msg": "The role has been not updated."
+        }
+    },
+
+
+
+
+
+
+    "leads_table": {
+        "id": "ID",
+        "name": "Lead name",
+        "phone": "Phone",
+        "whatsapp_phone": "Lead whatsapp number",
+        "email": "Lead email",
+        "id_cart": "Id cart",
+
+        "company_name": "Company name",
+        "company_phone": "Company phone",
+        "company_email": "Company email",
+        "company_logo": "Company logo",
+        "company_address": "Company address",
+        "company_scope": "Company scope",
+
+        "assign_to": "Personal sales",
+        "lead_status_id": "Status",
+        "created_by": "Created by",
+        "note": "Note",
+
+
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+        "lead_data": "Lead data",
+        "company_data": "Company data",
+        "lead_settings": "Lead settings",
+
+
+        "p_create": {
+            "success_msg": "New lead has been created.",
+            "failed_msg": "New lead has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The lead has been updated.",
+            "failed_msg": "The lead has been not updated."
+        }
+    },
+
+
+
+    "clients_table": {
+        "id": "ID",
+        "name": "Client name",
+        "phone": "Phone",
+        "whatsapp_phone": "Client whatsapp number",
+        "email": "Client email",
+        "id_cart": "Id cart",
+
+        "company_name": "Company name",
+        "company_phone": "Company phone",
+        "company_email": "Company email",
+        "company_logo": "Company logo",
+        "company_address": "Company address",
+        "company_scope": "Company scope",
+
+        "assign_to": "Personal sales",
+        "lead_status_id": "Status",
+        "created_by": "Created by",
+        "note": "Note",
+
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+        "client_data": "Client data",
+        "company_data": "Company data",
+        "client_settings": "Client settings",
+
+
+        "p_create": {
+            "success_msg": "New client has been created.",
+            "failed_msg": "New client has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The client has been updated.",
+            "failed_msg": "The client has been not updated."
+        }
+    },
+
+
+
+
+
+    "meetings_table": {
+        "id": "ID",
+        "lead_name": "Lead name",
+        "lead_id": "Lead name",
+        "lead_phone": "Lead phone",
+        "lead_whatsapp_phone": "Lead whatsapp number",
+        "assign_to": "Personal sales",
+        "date": "Meeting date",
+        "address": "Meeting address",
+        "meeting_id": "Next meeting",
+        "status": "Status",
+        "note": "Note",
+        "created_by": "Created by",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+        "lead_data": "Lead data",
+        "meeting_data": "Meeting data",
+        "next_meetings": "Next meetings",
+        "first_meeting": "First meeting",
+
+        "enter_lead_name_or_mobile": "Enter lead name or lead mobile",
+
+
+        "p_create": {
+            "success_msg": "New meeting has been created.",
+            "failed_msg": "New meeting has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The meeting has been updated.",
+            "failed_msg": "The meeting has been not updated."
+        }
+    },
+
+
+
+
+
+
+
+    "services_table": {
+        "id": "ID",
+        "name": "Service name",
+        "description": "Description",
+        "amount": "Amount",
+        "profit_method": "Profit method",
+        "profit_company": "Management",
+        "profit_ads": "Ads",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+
+        "p_create": {
+            "success_msg": "New service has been created.",
+            "failed_msg": "New service has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The service has been updated.",
+            "failed_msg": "The service has been not updated."
+        }
+    },
+
+
+
+
+
+    "lead_contracts_table": {
+        "id": "Contract number",
+        "lead_id": "Client name",
+        "lead_phone": "Client phone",
+        "company_name": "Company name",
+        "sales_id": "Personal sales",
+        "start_date": "Start date",
+        "end_date": "End date",
+        "duration": "Duration",
+        "job_title_lead": "Client title",
+        "tax": "Tax",
+        "total_amount": "Total amount",
+        "terms": "Terms",
+        "term": "Term",
+        "term_content": "Term content",
+        "note": "note",
+        "created_by": "Created by",
+
+        "not_found_lead": "Not found lead",
+        "not_found_user": "Not found user",
+
+
+        "sales_name": "Personal sales name",
+        "sales_name_ar": "Personal sales arabic name",
+        "sales_commission": "Sales commission",
+        "sales_commission_percent": "Sales commission percent",
+        "sales_id_cart": "Personal sales id cart",
+        "total_services": "Total services",
+        "taxes": "Taxes",
+        "profit_company": "Management",
+        "ads_amount": "Ads amount",
+        "services_amount": "Services amount",
+
+        "contract_number": "Contract number",
+        "contract_payments": "Contract payments",
+        "payment_date": "Payment date",
+        "payment_amount": "Payment amount",
+        "profit_method": "Profit method",
+        "payment_method": "Payment method",
+        "description": "Description",
+        "paid_amount": "Paid amount",
+        "remaining_amount": "Remaining amount",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+        "lead_data": "Client data",
+        "sales_data": "Personal sales data",
+        "contract_data": "Contract data",
+        "services": "Services",
+
+        "msg_success_send_receipt": "The receipt has been sent successfully.",
+        "msg_error_send_receipt": "The receipt not has been sent successfully.",
+
+        "msg_help_lead_email": "The client's email must be entered in order to send contract to the email.",
+
+        "p_create": {
+            "success_msg": "New contract has been created.",
+            "failed_msg": "New contract has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The contract has been updated.",
+            "failed_msg": "The contract has been not updated."
+        }
+    },
+
+
+
+
+
+
+    "lead_contracts_payments_table": {
+        "p_edit": {
+            "success_msg": "The contract payments has been updated.",
+            "failed_msg": "The contract payments has been not updated."
+        }
+    },
+
+
+
+
+    "quotations_table": {
+        "id": "ID",
+        "sales_id": "Personal sales",
+        "lead_id": "Client name",
+        "lead_phone": "Client phone",
+        "lead_whatsapp_phone": "Client whatsapp number",
+        "lead_type": "Client type",
+        "total_amount": "Total amount",
+
+        "not_found_lead": "Not found lead",
+        "not_found_user": "Not found user",
+
+
+        "total_services": "Total services",
+        "taxes": "Taxes",
+        "profit_company": "Management",
+        "ads_amount": "Ads amount",
+        "services_amount": "Services amount",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+        "lead_data": "Client data",
+        "sales_data": "Personal sales data",
+        "services": "Services",
+        "quotation_amount": "Quotation amount",
+
+        "msg_success_send_quotation": "The quotation has been sent successfully.",
+        "msg_error_send_quotation": "The quotation not has been sent successfully.",
+
+        "p_create": {
+            "success_msg": "New quotation has been created.",
+            "failed_msg": "New quotation has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The quotation has been updated.",
+            "failed_msg": "The quotation has been not updated."
+        }
+    },
+
+
+
+
+
+
+
+
+
+    "banks_table": {
+        "id": "ID",
+        "name": "Bank name",
+        "type": "Account type",
+        "account_no": "Account no",
+        "balance": "Balance",
+        "credit": "Credit",
+        "debit": "Debit",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+
+        "p_create": {
+            "success_msg": "New bank has been created.",
+            "failed_msg": "New bank has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The bank has been updated.",
+            "failed_msg": "The bank has been not updated."
+        }
+    },
+
+
+
+    "cashs_table": {
+        "id": "ID",
+        "name": "Cash name",
+        "balance": "Balance",
+        "credit": "Credit",
+        "debit": "Debit",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+
+        "p_create": {
+            "success_msg": "New cash has been created.",
+            "failed_msg": "New cash has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The cash has been updated.",
+            "failed_msg": "The cash has been not updated."
+        }
+    },
+
+
+
+    "partners_table": {
+        "id": "ID",
+        "name": "Partner name",
+        "type": "Account type",
+        "ratio": "Partnership ratio",
+        "id_card": "Id card",
+        "balance": "Balance",
+        "credit": "Credit",
+        "debit": "Debit",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+
+        "p_create": {
+            "success_msg": "New partner has been created.",
+            "failed_msg": "New partner has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The partner has been updated.",
+            "failed_msg": "The partner has been not updated."
+        }
+    },
+
+
+
+    "suppliers_table": {
+        "id": "ID",
+        "name": "Supplier name",
+        "company_name": "Company name",
+        "phone": "Phone",
+        "whatsapp_phone": "Whatsapp number",
+        "address": "Address",
+        "email": "Email",
+        "logo": "Logo",
+        "note": "Note",
+
+
+        "service_name": "Service name",
+        "service_amount": "Service amount",
+        "service_active": "Service active",
+        "description": "Description",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+
+        "p_create": {
+            "success_msg": "New supplier has been created.",
+            "failed_msg": "New supplier has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The supplier has been updated.",
+            "failed_msg": "The supplier has been not updated."
+        }
+    },
+
+
+
+
+    "expenses_table": {
+        "id": "ID",
+        "name": "Expense name",
+        "description": "Description",
+        "amount": "Amount",
+        "active": "Active",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+
+        "p_create": {
+            "success_msg": "New expense has been created.",
+            "failed_msg": "New expense has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The expense has been updated.",
+            "failed_msg": "The expense has been not updated."
+        }
+    },
+
+
+
+    "purchase_orders_table": {
+        "id": "ID",
+        "supplier_id": "Supplier",
+        "supplier_phone": "Supplier phone",
+        "supplier_whatsapp": "Supplier whatsapp number",
+        "total_amount": "Total amount",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+
+        "p_create": {
+            "success_msg": "New expense has been created.",
+            "failed_msg": "New expense has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The expense has been updated.",
+            "failed_msg": "The expense has been not updated."
+        }
+    },
+
+
+
+    "sales_table": {
+        "id": "ID",
+        "amount": "Amount",
+        "operation_type": "Operation type",
+        "account_id": "Account",
+        "client_id": "Client",
+        "contract_id": "Contract",
+        "payment_contract_id": "Payment",
+        "debit_type": "Debit to",
+        "supplier_id": "Supplier",
+        "expense_id": "Expense",
+        "documents": "Documents",
+        "note": "Note",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+        "p_create": {
+            "success_msg": "New payment has been created.",
+            "failed_msg": "New payment has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The payment has been updated.",
+            "failed_msg": "The payment has been not updated."
+        }
+    },
+
+
+
+    "sales_returns_table": {
+        "id": "ID",
+        "amount": "Amount",
+        "account_id": "Account",
+        "client_id": "Client",
+        "contract_id": "Contract",
+        "payment_contract_id": "Payment",
+        "documents": "Documents",
+        "note": "Note",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions"
+    },
+
+
+    "purchases_table_table": {
+        "id": "ID",
+        "amount": "Amount",
+        "account_id": "Account",
+        "debit_type": "Debit to",
+        "supplier_id": "Supplier",
+        "expense_id": "Expense",
+        "documents": "Documents",
+        "note": "Note",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions"
+    },
+
+
+
+    "purchase_returns_table": {
+        "id": "ID",
+        "amount": "Amount",
+        "account_id": "Account",
+        "debit_type": "Debit to",
+        "supplier_id": "Supplier",
+        "expense_id": "Expense",
+        "documents": "Documents",
+        "note": "Note",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions"
+    },
+
+
+
+    "fixed_assets_table": {
+        "id": "ID",
+        "amount": "Amount",
+        "account_id": "Account",
+        "debit_type": "Debit to",
+        "supplier_id": "Supplier",
+        "expense_id": "Expense",
+        "documents": "Documents",
+        "note": "Note",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions"
+    },
+
+
+
+
+
+    "platforms_table": {
+        "id": "ID",
+        "name": "Name",
+        "logo": "logo",
+        "cover": "Cover dimensions by px",
+        "profile": "Profile dimensions by px",
+        "post": "Post dimensions by px",
+
+        "cover_width": "Cover width",
+        "cover_height": "Cover height",
+        "profile_width": "Profile width",
+        "profile_height": "Profile height",
+        "post_width": "Post width",
+        "post_height": "Post height",
+        "width": "Width",
+        "height": "Height",
+        "display": "Display",
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+        "p_edit": {
+            "success_msg": "The platform has been updated.",
+            "failed_msg": "The platform has been not updated."
+        }
+    },
+
+
+
+
+    "projects_table": {
+        "id": "ID",
+        "staff": "Staff",
+        "lead_id": "Client name",
+        "lead_phone": "Client phone",
+        "lead_whatsapp_phone": "Client whatsapp number",
+        "company_name": "Company name",
+        "company_scope": "Company scope",
+        "company_email": "Company email",
+        "start_date": "Start date",
+        "end_date": "End date",
+        "duration": "Duration",
+        "ads_amount": "Ads amount",
+        "status": "Status",
+        "created_by": "Created by",
+
+        "designer_id": "The designer",
+        "designer_deadline": "Designer deadline",
+        "designer_status": "Designer status",
+        "marketer_id": "The marketer",
+        "marketer_deadline": "Marketer deadline",
+        "marketer_status": "Marketer status",
+        "advertiser_id": "The advertiser",
+        "advertiser_deadline": "Advertiser deadline",
+        "advertiser_status": "Advertiser status",
+
+        "addresses": "Addresses",
+        "address": "Address",
+        "add_address": "Add address",
+
+        "websites": "Websites",
+        "website": "Url website",
+        "add_website": "Add website",
+
+        "phone_numbers": "Phone numbers",
+        "number": "Phone number",
+        "add_phone": "Add phone",
+
+        "emails": "Emails",
+        "email": "Email",
+        "add_email": "Add email",
+
+        "designs_count": "Designs count",
+        "need_logo": "Client needs a logo",
+        "logo_src": "Logo",
+        "need_cover": "Client needs a cover",
+        "need_profile": "Client needs a profile",
+        "colors_favorite": "Colors favorite",
+        "description": "Description",
+        "color": "Color",
+        "design_info": "Design informations",
+        "gallery": "Images of materials",
+        "posts_type": "Posts type",
+        "posts_count": "Posts count",
+        "client_products": "Client products",
+        "client_offers": "Client offers",
+        "competitors_links": "Competitors links",
+        "sponsored_posts_count": "Sponsored posts count",
+        "targeted_places": "Targeted places",
+        "place": "place",
+        "targeted_gender": "Targeted gender",
+        "male": "Males",
+        "female": "Females",
+        "targeted_age": "Targeted age",
+        "min_age": "Min age",
+        "max_age": "Max age",
+        "days_count": "Days count",
+        "day_budget": "Day budget",
+        "note": "Note",
+        "platforms": "Platforms",
+        "url_platform": "Url platform",
+        "choose_platform": "Choose platform",
+        "not_found_platform": "Not found platform",
+        "url": "Url",
+        "name": "Name page",
+        "need_platform": "Client needs a platform",
+        "auth": "Authentication",
+
+
+        "add_color": "Add color",
+        "add_link": "Add link",
+        "add_place": "Add place",
+        "add_platform": "Add platform",
+
+        "ask_create_new": "Are you sure a create new project ?",
+        "create_project": "Create project",
+        "complete_project": "Complete project",
+        "view_project": "View project",
+        "edit_project": "Edit project",
+
+        "client_data": "Client data",
+        "payment_data": "Payment data",
+
+        "client_info": "Project client informations",
+        "designs_info": "Project design informations",
+        "marketing_info": "Project marketing informations",
+        "ads_info": "Project ads informations",
+        "designer_data": "Designer data",
+        "marketer_data": "Marketer data",
+        "advertiser_data": "Advertiser data",
+
+
+
+
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+        "ask_activation": "Are you sure you want to activate this user?",
+
+        "p_active": {
+            "success_msg": "The user has been activated.",
+            "failed_msg": "The user has been not activated."
+        },
+
+        "p_create": {
+            "success_msg": "New project has been created.",
+            "failed_msg": "New project has been not created."
+        },
+
+        "p_edit": {
+            "success_msg": "The project has been updated.",
+            "failed_msg": "The project has been not updated."
+        }
+    },
+
+
+
+
+    "todos": {
+        "placeholder": "What needs to be done?",
+        "msg_success": "Todos has been updated.",
+        "msg_failed": "Todos has been not updated."
+    },
+
+
+
+
+
+
+    "general-settings_table": {
+        "id": "ID",
+        "slug": "Slug",
+        "name": "Setting name",
+        "value": "Value",
+        "type": "Type",
+        "user_id": "Created by",
+        "created_at": "Created at",
+        "updated_at": "Last Modified",
+        "actions": "Actions",
+
+
+        "setting_types": {
+            "string": "String",
+            "text": "Text",
+            "image": "Image"
+        },
+
+
+        "p_create": {
+            "success_msg": "New setting has been created.",
+            "failed_msg": "New setting has been not created."
+        },
+        "p_edit": {
+            "success_msg": "The setting has been updated.",
+            "failed_msg": "The setting has been not updated."
+        }
+    },
+
+
+
+    "lead_statuses_table": {
+        "name": "Status name",
+        "color": "Color",
+
+        "p_edit": {
+            "success_msg": "The statuses has been updated.",
+            "failed_msg": "The statuses has been not updated."
+        }
+    },
+
+
+    "sales_commissions_table": {
+        "sales_id": "Personal sales",
+        "commission": "Commission",
+
+        "p_edit": {
+            "success_msg": "The commissions has been updated.",
+            "failed_msg": "The commissions has been not updated."
+        }
+    }
+}

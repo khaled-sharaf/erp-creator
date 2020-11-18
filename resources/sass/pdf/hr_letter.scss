@@ -1,0 +1,56 @@
+
+@import './pdf-style';
+
+body {
+    direction: rtl;
+    text-align: right !important;
+    color: #333;
+}
+
+.page-header {
+    .pdf-title {
+        float: right;
+        text-align: right;
+        color: #000;
+        width: 125px;
+    }
+    border-bottom: 1px solid $mainColorDark;
+    padding-bottom: 5px;
+}
+
+
+.wrapper-content {
+    .content {
+        .page-title {
+            .label-page {
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+
+
+        .section-content {
+            padding-top: 40px;
+            font-size: 14px;
+        }
+
+
+        .signature-footer {
+            margin-top: 350px;
+            .signature {
+                width: 300px;
+                float: left;
+                text-align: center;
+                .title {
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                .place {
+                    color: #555;
+                }
+            }
+        }
+    }
+}

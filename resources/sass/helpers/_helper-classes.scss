@@ -1,0 +1,215 @@
+.hidden {
+    display: none !important;
+}
+.show {
+    display: block !important;
+}
+
+.hidden_only_mob {
+    @include maxMobile {
+        display: none !important;
+    }
+}
+.hidden_small_to_down {
+    @include maxSmall {
+        display: none !important;
+    }
+}
+.hidden_only_medium {
+    @include maxMedium {
+        display: none !important;
+    }
+    @include maxSmall {
+        display: block !important;
+    }
+}
+.hidden_medium_to_down {
+    @include maxMedium {
+        display: none !important;
+    }
+}
+.hidden_medium_to_up {
+    @include minMedium {
+        display: none !important;
+    }
+}
+.hidden_only_large {
+    @include minLarge {
+        display: none !important;
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+textarea.auto-resize {
+    resize: none;
+    overflow: hidden;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.shadow0 {
+    @include shadow(0);
+}
+.shadow1 {
+    @include shadow(1);
+}
+.shadow2 {
+    @include shadow(2);
+}
+.shadow3 {
+    @include shadow(3);
+}
+.shadow4 {
+    @include shadow(4);
+}
+.shadow5 {
+    @include shadow(5);
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.hoverable {
+  @include trans(box-shadow 0.25s);
+  @include pfx(box-shadow, none, $allPrefixes);
+}
+
+.hoverable:hover {
+  @include pfx(box-shadow, '0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', $allPrefixes);
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.clearfix {
+    @include clearfix;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.placeholder-opacity {
+    &::placeholder {
+        @include trans('opacity 0.4s');
+    }
+    &:focus {
+        &::placeholder {
+            opacity: 0;
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.wrapper-border-effect {
+    position: relative;
+    .input-border-effect {
+        // reset props
+        border: none;
+        box-shadow: none;
+        border-bottom: 2px solid #DDD;
+        padding: {
+            left: 0;
+            right: 0;
+        };
+        background-color: transparent;
+        border-radius: 2px;
+        &:focus, &:hover {
+            box-shadow: none;
+        }
+        // add effect
+        &+.span-border-effect-left,
+        &+.span-border-effect-center,
+        &+.span-border-effect-right {
+            position: absolute;
+            bottom: 0;
+            display: block;
+            @include trans('0.3s');
+            width: 0;
+            height: 2px;
+            background-color: #139d58;
+        }
+        &+.span-border-effect-left {
+            left: 0;
+        }
+        &+.span-border-effect-center {
+            left: 50%;
+        }
+        &+.span-border-effect-right {
+            right: 0;
+        }
+        &:focus {
+            &+.span-border-effect-left,
+            &+.span-border-effect-center,
+            &+.span-border-effect-right {
+                width: 100%;
+            }
+            &+.span-border-effect-center {
+                left: 0;
+            }
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// button scroll up
+.bttn-scroll-up, .bttn-scroll-down {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 1.2em;
+    @extend .shadow2;
+    background-color: rgba(white, 0.4);
+    position: fixed;
+    bottom: 50px;
+    z-index: 1999;
+    #{$posR}: 30px;
+    cursor: pointer;
+    @include trans('0.3s');
+    &:hover {
+        @extend .shadow3;
+        background-color: rgba(white, 0.7);
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// read more
+.read-more {
+    a, button {
+        display: inline-block;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    button:focus {
+        outline: 0;
+    }
+    .btn-more {
+        border: 0;
+        background-color: transparent;
+        color: #3498db;
+        padding: 0 4px;
+        margin: 0;
+        cursor: pointer;
+    }
+    .btn-more:hover {
+        color: #326ca7;
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

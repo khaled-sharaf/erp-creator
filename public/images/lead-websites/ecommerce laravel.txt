@@ -1,0 +1,10 @@
+ecommerce plugin url
+
+https://kode-blog.io/laravel-5-shopping-cart
+
+https://github.com/darryldecode/laravelshoppingcart
+
+Shopping cart used also:
+https://github.com/Crinsane/LaravelShoppingcart -> compatible for laravel 6.0
+https://packagist.org/packages/gloudemans/shoppingcart -> docs of it
+https://github.com/bumbummen99/LaravelShoppingcart -> compatible for laravel 5.8 and 5.9

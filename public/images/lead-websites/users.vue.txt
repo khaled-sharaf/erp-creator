@@ -1,0 +1,255 @@
+<template>
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Users</h3>
+
+                <div class="card-tools">
+                  <!-- data-toggle="modal" data-target="#addUser" -->
+                  <button class="btn btn-success" @click="newUser">Add User <i class="fa fa-user-plus"></i></button>
+                  <!-- <div class="input-group input-group-sm" style="width: 150px;">
+                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Type</th>
+                      <th>Registered At</th>
+                      <th>Modify</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="item in items" :key="item.id">
+                      <td>{{item.id}}</td>
+                      <td>{{item.name}}</td>
+                      <td>{{item.email}}</td>
+                      <td>{{item.type | capitalText}}</td>
+                      <td>{{item.created_at | formatDate}}</td>
+                      <td>
+                        <a href="" @click.prevent="editUser(item)">
+                          <i class="fa fa-edit text-success"></i>
+                        </a> /
+                        <a href="" @click.prevent="deleteUser(item.id)">
+                          <i class="fa fa-trash text-danger"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="addUserLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-secondary">
+                <h5 v-show="editmode" class="modal-title" id="addUserLabel">Create User</h5>
+                <h5 v-show="!editmode" class="modal-title" id="addUserLabel">Update User</h5>
+                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+            <form @submit.prevent="editmode ? createUser() : updateUser()">
+              <div class="modal-body">
+                <div class="form-group">
+                  <input v-model="form.name" type="text" name="name" placeholder="UserName"
+                    class="form-control" :class="{ 'is-invalid': form.errors.has('name') }">
+                  <has-error :form="form" field="name"></has-error>
+                </div>
+                <div class="form-group">
+                  <input v-model="form.email" type="text" name="email" placeholder="UserEmail"
+                    class="form-control" :class="{ 'is-invalid': form.errors.has('email') }">
+                  <has-error :form="form" field="email"></has-error>
+                </div>
+                <div class="form-group" v-show="editmode">
+                  <input v-model="form.password" type="password" name="password" placeholder="Password"
+                    class="form-control" :class="{ 'is-invalid': form.errors.has('password') }">
+                  <has-error :form="form" field="password"></has-error>
+                </div>
+                <div class="form-group">
+                  <textarea v-model="form.bio" name="bio" placeholder="Biography (optional)"
+                    class="form-control" :class="{ 'is-invalid': form.errors.has('bio') }"
+                    rows="3">
+                    <has-error :form="form" field="bio"></has-error>
+                  </textarea>
+                </div>
+                <div class="form-group">
+                  <select v-model="form.type" name="type" placeholder="Select User Type"
+                  class="form-control" :class="{ 'is-invalid': form.errors.has('type') }">
+                    <option value="">Select User Type</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">Standard User</option>
+                    <option value="author">Author</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button v-show="editmode" type="submit" class="btn btn-primary">Create</button>
+                <button v-show="!editmode" type="submit" class="btn btn-info text-white">Update</button>
+              </div>
+            </form>
+
+            </div>
+          </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+      data() {
+        return {
+          editmode: true,
+          items: {},
+          form: new Form({
+            id: '',
+            name: '',
+            email: '',
+            password: '',
+            type: '',
+            bio: '',
+            photo: '',
+            // api_token: '',
+          })
+        }
+      },
+      methods: {
+        editUser(data) {
+          this.editmode = false;
+          this.form.reset();
+          this.form.clear();
+          $('#addUser').modal('show');
+          this.form.fill(data);
+        },
+        newUser() {
+          this.editmode = true;
+          this.form.reset();
+          this.form.clear();
+          $('#addUser').modal('show');
+        },
+        deleteUser(id) {
+          Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+          }).then((result) => {
+            // Send Http request to the server
+
+            if (result.value) {
+              this.form.delete('api/user/' + id)
+              this.$emit('AfterCreate');
+              Toast.fire({
+                icon: 'success',
+                title: 'It has been deleted successfully'
+              })
+            }
+          }).catch(() => {
+            Toast.fire({
+              icon: 'error',
+              title: 'Oops, Something went wrong!'
+            })
+          })
+        },
+        loadUsers() {
+          // const auth = {
+          //     headers: {Authorization:'token ' + localStorage.getItem(this.form)}
+          // }
+          // console.log(auth);
+
+
+          // const token = axios.get('user-token').then((data) => {data.config.headers});
+          // console.log(token);
+
+          // let auth = {
+          //   headers: {
+          //       Authorization: this.form.fill()
+          //   }
+          // }
+          // console.log(auth);
+
+          // axios.get('api/user').then((data) => {
+          // axios.get('user-token').then((data) => {
+
+            // console.log(JSON.stringify(data.config.headers));
+            // localStorage.setItem('header', JSON.stringify(data.config.headers));
+            // axios.get('api/user', JSON.parse(localStorage.getItem('header'))['X-XSRF-TOKEN']).then((res) => {
+            //   console.log('the data is : ' + res);
+
+            // });
+
+
+          // });
+
+          // axios.get('user').then(({data}) => {this.items = data.data});
+          axios.get('api/user').then(({data}) => {
+            console.log(data.users);
+
+            this.items = data.users.data;
+          });
+        },
+        createUser() {
+            this.form.post('api/user')
+            .then(() => {
+              // $('button[type="submit"]').attr('data-dismiss', 'modal')
+              this.$emit('AfterCreate');
+              Toast.fire({
+                icon: 'success',
+                title: 'It has been created successfully'
+              })
+            })
+            .catch(() => {
+
+            })
+        },
+        updateUser() {
+          this.form.put('api/user/' + this.form.id).then(() => {
+            this.$emit('AfterCreate');
+            $("#addUser").modal('hide');
+            Toast.fire({
+              icon: 'success',
+              title: 'It has been updated successfully'
+            })
+            console.log("update");
+          }).catch(() => {
+            Toast.fire({
+                icon: 'error',
+                title: 'Oops, Something went wrong!'
+              })
+          });
+        },
+      },
+      created() {
+        this.loadUsers();
+        // setInterval(() => this.loadUsers(), 3000);
+        this.$on('AfterCreate', () => {
+          this.loadUsers();
+          this.loadUsers();
+        });
+      },
+
+    }
+</script>

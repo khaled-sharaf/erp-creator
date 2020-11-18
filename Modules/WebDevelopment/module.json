@@ -1,0 +1,13 @@
+{
+    "name": "WebDevelopment",
+    "alias": "webdevelopment",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\WebDevelopment\\Providers\\WebDevelopmentServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

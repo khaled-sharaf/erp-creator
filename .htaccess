@@ -1,0 +1,16 @@
+
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^creatoreg\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.creatoreg\.com$
+RewriteRule ^(.*)$ "https\:\/\/creatoreg\.com\/$1" [R=301,L]
+
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    RewriteRule ^(.*)$ public/$1 [L]
+
+</IfModule>

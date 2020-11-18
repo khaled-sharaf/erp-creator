@@ -1,0 +1,628 @@
+{
+    "global": {
+        "home": "الرئيسية",
+        "dashboard": "الرئيسية",
+        "user": "مدير",
+        "hotel": "فندق",
+        "the_hotel": "الفندق",
+        "the_price": "السعر",
+        "the_travel": "الرحلة",
+        "the_offers": "العروض",
+        "room": "غرفة",
+        "the_travel_program": "برنامج الرحلة",
+        "the_travel_category": "قسم الرحلة",
+        "the_images": "الصور",
+        "type": "نوع",
+        "comment": "تعليق",
+        "winner": "فائز",
+        "setting": "إعداد",
+
+        "no_rooms": "لا يوجد غرف",
+        "no_travels": "لا يوجد رحلات",
+        "no_hotel_features": "لا توجد مميزات للفندق",
+        "no_offers": "لا توجد عروض لهذه الرحلة",
+        "no_bookings": "لا توجد حجوزات لهذه الرحلة",
+        "no_gallery": "لا توجد صور",
+        "no_location": "لا توجد خريطة",
+        "show_map": "اعرض الخريطة",
+        "days": "أيام",
+        "day": "يوم",
+
+        "profile": "بروفايل",
+        "the_profile": "البروفايل",
+        "edit_profile": "تعديل البيانات الشخصية",
+        "view_profile": "عرض الصفحة الشخصية",
+        "user_profile": "الصفحة الشخصية",
+        "lead_profile": "صفحة العميل",
+
+        "model_is_deleted": "محذوف",
+
+
+        "logout": "تسجيل الخروج",
+        "create": "إنشاء",
+        "create_again": "إنشاء مرة أخرى",
+        "edit": "تعديل",
+        "update": "تحديث",
+        "save": "حفظ",
+        "read": "اقرأ",
+        "all": "الكل",
+        "n_all": "كل",
+        "read_more": "اقرأ المزيد",
+        "more_info": "معرفة المزيد",
+        "choose_image": "اختر صورة",
+        "drag_msg": "اسحب الصورة وضعها هنا أو اضغط للاختيار",
+
+        "none_status": "بدون حالة",
+
+        "active": "مفعل",
+        "disactive": "غير مفعل",
+        "available": "متاح",
+        "unavailable": "غير متاح",
+
+        "hidden": "مخفى",
+        "visible": "ظاهر",
+
+        "show": "عرض",
+        "hide": "إخفاء",
+        "view": "عرض",
+        "close": "إغلاق",
+        "display": "إظهار",
+        "from": "من",
+        "to": "إلى",
+        "in": "فى",
+        "on": "على",
+        "or": "أو",
+        "with": "مع",
+
+        "delete": "حذف",
+        "deleted": "تم الحذف",
+        "force_delete": "إزالة نهائيا",
+        "remove": "إزالة",
+        "removed": "تمت الإزالة",
+        "restore": "استرجاع",
+        "restored": "تم الإسترجاع",
+        "failed": "فشل",
+        "cancel": "إلغاء",
+
+        "meeting": "مقابلة",
+        "next_meeting": "مقابلة أخرى",
+        "contract": "تعاقد",
+
+
+
+        "yes_delete_it": "تأكيد الحذف",
+        "yes_remove_it": "تأكيد الإزالة",
+        "yes_restore_it": "تأكيد الإسترجاع",
+
+
+        "settings_table": "إعدادات جدول {model} فى كل الشاشات",
+
+        "notifications": "إشعارات",
+        "the_notifications": "الإشعارات",
+        "notification": "إشعار",
+        "all_notifications": "كل الإشعارات",
+        "the_messages": "الرسائل",
+        "all_messages": "كل الرسائل",
+        "latest_messages": "اخر الرسائل",
+        "staff": "الموظفين",
+        "clients": "العملاء",
+        "vendors": "الموردين",
+
+        "reports": "التقارير",
+
+
+        "notif_create_user": "تم إنشاء موظف جديد بواسطة",
+
+        "currency": "جنية"
+    },
+
+
+
+    "messages": {
+        "delete_msg": "هل أنت متأكد من حذف هذا العنصر ؟",
+        "delete_success_msg": "تم حذف العنصر.",
+        "delete_failed_msg": "لم يتم حذف العنصر.",
+
+        "force_delete_msg": "هل أنت متأكد من إزالة هذا العنصر بشكل نهائى ؟",
+        "force_delete_success_msg": "تم إزالة العنصر بشكل نهائى.",
+        "force_delete_failed_msg": "لم يتم إزالة العنصر.",
+
+        "restore_msg": "هل أنت متأكد من استرجاع هذا العنصر ؟",
+        "restore_success_msg": "تم استرجاع العنصر.",
+        "restore_failed_msg": "لم يتم استرجاع العنصر.",
+
+
+        "multi_delete_msg": "هل أنت متأكد من حذف جميع العناصر المعلم عليها؟",
+        "multi_delete_success_msg": "تم حذف جميع العناصر المعلم عليها.",
+        "multi_delete_failed_msg": "لم يتم حذف جميع العناصر المعلم عليها.",
+
+        "multi_force_delete_msg": "هل أنت متأكد من إزالة جميع العناصر المعلم عليها بشكل نهائى ؟",
+        "multi_force_delete_success_msg": "تم إزالة جميع العناصر المعلم عليها بشكل نهائى.",
+        "multi_force_delete_failed_msg": "لم يتم إزالة جميع العناصر المعلم عليها.",
+
+        "multi_restore_msg": "هل أنت متأكد من استرجاع جميع العناصر المعلم عليها؟",
+        "multi_restore_success_msg": "تم استرجاع جميع العناصر المعلم عليها.",
+        "multi_restore_failed_msg": "لم يتم استرجاع جميع العناصر المعلم عليها.",
+
+
+
+        "change_lead_status_success_msg": "تم تحديث حالة العميل بنجاح",
+        "change_lead_status_failed_msg": "لم يتم تحديث حالة العميل",
+
+        "change_meeting_status_success_msg": "تم تحديث حالة المقابلة بنجاح",
+        "change_meeting_status_failed_msg": "لم يتم تحديث حالة المقابلة",
+
+        "reason_status": "سبب تغيير الحالة",
+        "change_meeting_status_to": "تغيير حالة المقابلة إلى"
+
+    },
+
+
+
+    "sidebar": {
+        "dashboard": "اللوحة الرئيسية",
+
+
+
+        "hr": "HR",
+
+        "users": "الموظفين",
+        "all_users": "جميع الموظفين",
+        "new_user": "موظف جديد",
+        "edit_user": "تعديل موظف",
+
+        "departments": "الأقسام",
+        "new_department": "قسم جديد",
+        "edit_department": "تعديل قسم",
+
+        "job_titles": "مسميات الوظائف",
+        "add_title": "إضافة وظيفة",
+        "delete_title": "حذف الوظيفة",
+        "new_job_title": "مسمى وظيفى جديد",
+
+        "attendance": "الحضور والانصراف",
+
+        "requests": "طلبات الإستئذان",
+        "new_request": "طلب جديد",
+
+        "vacations": "الأجازات",
+        "new_vacation": "أجازة",
+
+        "holidays": "الأجازات الرسمية",
+        "new_holiday": "أجازة رسمية",
+
+        "evaluations": "التقييم",
+        "new_evaluation": "تقييم جديد",
+
+        "payroll": "كشف الرواتب",
+
+        "contracts": "العقود",
+        "new_contract": "عقد جديد",
+
+        "permissions": "الصلاحيات",
+
+
+        "crm": "CRM",
+
+        "leads": "العملاء المحتملين",
+        "all_leads": "كل العملاء المحتملين",
+        "new_lead": "عميل محتمل جديد",
+        "edit_lead": "تعديل عميل محتمل",
+
+
+        "meetings": "المقابلات",
+        "all_meetings": "كل المقابلات",
+        "new_meeting": "مقابلة جديدة",
+        "edit_meeting": "تعديل مقابلة",
+        "meeting_view": "عرض المقابلة",
+
+        "clients": "العملاء المتعاقدين",
+        "lead_contracts": "العقود",
+
+
+
+        "sales": "المبيعات",
+
+        "sales_offer_prices": "عروض الأسعار",
+        "sales_bills": "الفواتير",
+
+
+
+        "accounting": "الحسابات",
+
+        "accounting_accounts": "الحسابات",
+        "accounting_treasury_movement": "حركة الخزينة",
+        "accounting_expenses": "المصروفات",
+        "accounting_vendors": "الموردين",
+        "accounting_banks": "البنوك",
+        "accounting_exchange_and_receive_money": "صرف واستلام النقدية",
+
+        "accounting_salse": "المبيعات",
+        "accounting_contracting": "التعاقدات",
+        "accounting_clients": "العملاء",
+
+        "accounting_purchases": "المشتريات",
+
+        "accounting_payroll": "كشف رواتب",
+
+
+
+        "designs": "التصميمات",
+
+        "new_project": "مشروع جديد",
+        "show_all_designs": "عرض كل التصميمات",
+
+
+
+        "marketing": "التسويق",
+
+        "marketing_publishing_tools": "Publishing tools",
+        "marketing_contents": "Contents",
+
+        "new_marketing_content_campaign": "new content campaign",
+        "marketing_ads_campaigns": "Ads campaign",
+        "new_marketing_ads_campaigns": "new ads campaign",
+
+
+
+        "plans": "خطط الأسعار",
+
+        "marketing_plan": "الخطة التسويقة",
+        "business_plan": "الخطة التجارية",
+        "analysis": "التحليل",
+        "proposals": "الاقتراحات",
+
+
+
+        "website": "لوحة تحكم الموقع",
+
+        "website_publishing_tools": "Publishing tools",
+        "website_design_campaigns": "Design campaigns",
+        "website_offers": "Offers",
+
+
+
+        "web_development": "تطوير المواقع",
+
+        "web_development_projects": "المشاريع",
+        "new_web_development_projects": "مشروع جديد",
+
+
+
+        "calendar": "التقويم",
+
+
+
+        "projects_management": "إدارة المشاريع",
+
+        "projects_management_designs": "التصميمات",
+        "projects_management_facebook": "Facebook",
+        "projects_management_instagram": "Instagram",
+        "projects_management_twitter": "Twitter",
+        "projects_management_google_adword": "Google Adword",
+        "projects_management_ads": "الإعلانات",
+        "projects_management_development": "التطوير",
+
+
+
+        "reports": "التقارير",
+
+
+
+        "settings": "الإعدادات",
+        "general-settings": "الإعدادات الرئيسية",
+        "all_general-settings": "الإعدادات الرئيسية",
+        "new_setting": "إعداد جديد",
+        "edit_setting": "تعديل إعداد",
+
+        "lead_statuses": "حالات العملاء المحتملين",
+        "add_status": "إضافة حالة",
+        "delete_status": "حذف الحالة",
+
+        "sales_commissions": "عمولات موظفين المبيعات",
+        "add_commission": "إضافة عمولة لموظف",
+        "delete_commission": "حذف عمولة الموظف"
+    },
+
+
+
+    "datatable": {
+        "showing": "إظهار",
+        "entries": "سجلات",
+        "from": "من",
+        "to": "إلى",
+        "of": "من",
+        "next": "التالى",
+        "prev": "السابق",
+        "empty_table": "جدول فارغ",
+        "no_data_msg": "لا يوجد بيانات فى  هذا الجدول.",
+
+        "items_selected": "عناصر محددة",
+
+        "trash": "المهمل",
+        "trashed": "المحذوف",
+        "not_trashed": "غير المحذوف",
+
+        "all": "الكل",
+
+        "activation": "التفعيل",
+
+        "active": "مفعل",
+        "not_active": "غير مفعل",
+
+        "display": "الظهور",
+
+        "show": "الغير مخفى",
+        "hide": "المخفى",
+
+
+        "rules": "الصلاحيات",
+        "rules_filter": {
+            "super_admin": "Super Admin",
+            "admin": "Admin",
+            "user": "User"
+        },
+
+        "sold_out": "نفاذ الكمية",
+        "discount": "الخصم",
+        "created_between": "تم إنشائه فى تاريخ",
+        "search": "بحث",
+        "search_by": "ابحث بـ",
+        "search_tools": "أدوات البحث",
+        "filters": "تصفية",
+        "reset": "إعادة",
+
+        "print": "طباعة"
+    },
+
+
+
+    "users_table": {
+        "id": "المعرف",
+        "name": "الاسم",
+        "name_ar": "الاسم عربى",
+        "email": "البريد الإليكتروني",
+        "password": "كلمة السر",
+        "repeat_password": "أعد كلمة السر",
+        "phone": "الموبايل",
+        "home_phone": "تليفون المنزل",
+        "emergency_phone": "رقم الطوارئ",
+        "country": "البلد",
+        "city": "المدينة",
+        "address": "عنوان المنزل",
+        "photo": "الصورة الشخصية",
+        "id_cart": "رقم البطاقة الشخصية",
+        "nationality": "الجنسية",
+        "marital_status": "الحالة الزوجية",
+        "gender": "الجنس",
+        "birth_date": "تاريخ الميلاد",
+
+        "work_phone": "موبايل العمل",
+        "work_email": "بريد العمل",
+        "work_address": "عنوان العمل",
+        "bank_account_number": "رقم حساب البنك",
+        "visa_number": "رقم الفيزا",
+        "visa_expire_date": "تاريخ انتهاء الفيزا",
+
+        "certificate_level": "المستوى التعليمى",
+        "school": "الجامعة / المدرسة",
+
+        "job_title_id": "المسمى الوظيفى",
+        "department_id": "القسم",
+        "work_period_id": "فترة العمل",
+        "hiring_date": "تاريخ التوظيف",
+        "salary": "الراتب",
+        "rule": "الصلاحية",
+        "active": "التفعيل",
+
+        "document_note": "ملحوظة",
+
+        "updated_at": "أخر تعديل",
+        "created_at": "تاريخ الإنشاء",
+        "actions": "الإجراءات",
+
+        "registration_data": "بيانات التسجيل",
+        "personal_data": "البيانات الشخصية",
+        "education": "التعليم",
+        "word_data": "بيانات العمل",
+        "job_data": "بيانات الوظيفة",
+
+        "activate": {
+            "on": "مفعل",
+            "off": "غير مفعل"
+        },
+
+        "rules": {
+            "super_admin": "مشرف سوبر",
+            "admin": "مشرف",
+            "user": "مستخدم"
+        },
+
+        "genders": {
+            "male": "ذكر",
+            "female": "أنثى",
+            "others": "أخرى"
+        },
+
+        "marital_statuses": {
+            "single": "أعزب",
+            "engaged": "خاطب / مخطوبة",
+            "married": "متزوج",
+            "others": "حالة أخرى"
+        },
+
+
+        "p_create": {
+            "success_msg": "تم إنشاء موظف جديد.",
+            "failed_msg": "لم يتم إنشاء الموظف الجديد."
+        },
+        "p_edit": {
+            "success_msg": "تم تحديث الموظف.",
+            "failed_msg": "لم يتم تحديث هذا الموظف."
+        }
+    },
+
+
+
+    "departments_table": {
+        "id": "المعرف",
+        "name": "اسم القسم",
+        "updated_at": "أخر تعديل",
+        "created_at": "تاريخ الإنشاء",
+        "actions": "الإجراءات",
+
+        "p_create": {
+            "success_msg": "تم إنشاء قسم جديد.",
+            "failed_msg": "لم يتم إنشاء القسم الجديد."
+        },
+        "p_edit": {
+            "success_msg": "تم تحديث القسم.",
+            "failed_msg": "لم يتم تحديث هذا القسم."
+        }
+    },
+
+
+
+    "job_titles_table": {
+        "id": "المعرف",
+        "name": "اسم الوظيفة",
+        "department_id": "القسم",
+        "updated_at": "أخر تعديل",
+        "created_at": "تاريخ الإنشاء",
+        "actions": "الإجراءات"
+    },
+
+
+
+
+    "leads_table": {
+        "id": "المعرف",
+        "name": "اسم العميل",
+        "phone": "موبايل العميل",
+        "whatsapp_phone": "واتساب العميل",
+        "email": "البريد الإليكترونى للعميل",
+        "id_cart": "رقم البطاقة الشخصية",
+
+        "company_name": "اسم الشركة",
+        "company_phone": "موبايل الشركة",
+        "company_email": "البريد الإليكترونى للشركة",
+        "company_logo": "شعار الشركة",
+        "company_address": "عنوان الشركة",
+        "company_scope": "مجال عمل الشركة",
+        "latitude": "خط العرض",
+        "longitude": "خط الطول",
+
+        "assign_to": "موظف المبيعات",
+        "lead_status_id": "حالة العميل",
+        "created_by": "أضيف بواسطة",
+        "note": "ملحوظة",
+
+
+        "location": "الخريطة",
+        "location_map": "خريطة الموقع",
+        "msg_location_map": "ابحث عن مكان الشركة ثم انقل العلامة الحمراء إلى مكان الشركة بدقة.",
+        "error_location": "لم يتم العثور على المكان ، ابحث بكلمات أخرى.",
+        "remove_location": "إزالة الموقع",
+
+        "updated_at": "أخر تعديل",
+        "created_at": "تاريخ الإنشاء",
+        "actions": "الإجراءات",
+
+
+        "lead_data": "بيانات العميل",
+        "company_data": "بيانات الشركة",
+        "lead_settings": "إعدادات العميل",
+
+
+        "p_create": {
+            "success_msg": "تم إنشاء عميل محتمل جديد.",
+            "failed_msg": "لم يتم إنشاء العميل الجديد."
+        },
+        "p_edit": {
+            "success_msg": "تم تحديث العميل.",
+            "failed_msg": "لم يتم تحديث هذا العميل."
+        }
+    },
+
+
+
+
+    "meetings_table": {
+        "id": "المعرف",
+        "lead_name": "اسم العميل",
+        "lead_id": "اسم العميل",
+        "lead_phone": "موبايل العميل",
+        "lead_whatsapp_phone": "واتساب العميل",
+        "date": "موعد المقابلة",
+        "address": "عنوان المقابلة",
+        "meeting_id": "المقابلة التالية",
+        "status": "حالة المقابلة",
+        "note": "ملحوظة",
+        "created_by": "أضيف بواسطة",
+
+
+        "updated_at": "أخر تعديل",
+        "created_at": "تاريخ الإنشاء",
+        "actions": "الإجراءات",
+
+
+        "lead_data": "بيانات العميل",
+        "meeting_data": "بيانات المقابلة",
+
+        "enter_lead_name_or_mobile": "أدخل اسم العميل أو موبايل العميل",
+
+
+        "p_create": {
+            "success_msg": "تم إنشاء مقابلة جديدة.",
+            "failed_msg": "لم يتم إنشاء المقابلة."
+        },
+        "p_edit": {
+            "success_msg": "تم تحديث المقابلة.",
+            "failed_msg": "لم يتم تحديث المقابلة."
+        }
+    },
+
+
+
+
+
+    "general-settings_table": {
+        "id": "المعرف",
+        "slug": "الاسم التعبيرى",
+        "name": "اسم الإعداد",
+        "value": "القيمة",
+        "type": "النوع",
+        "user_id": "أضيف بواسطة",
+        "updated_at": "أخر تعديل",
+        "created_at": "تاريخ الإنشاء",
+        "actions": "الإجراءات",
+
+        "setting_types": {
+            "string": "نص قصير",
+            "text": "نص طويل",
+            "image": "صورة"
+        },
+
+        "p_create": {
+            "success_msg": "تم إنشاء إعداد جديد.",
+            "failed_msg": "لم يتم إنشاء الإعداد الجديد."
+        },
+        "p_edit": {
+            "success_msg": "تم تحديث الإعداد.",
+            "failed_msg": "لم يتم تحديث هذا الإعداد."
+        }
+    },
+
+
+
+
+    "lead_statuses_table": {
+        "name": "اسم الحالة",
+        "color": "لون الحالة",
+
+        "p_edit": {
+            "success_msg": "تم تحديث الحالات.",
+            "failed_msg": "لم يتم تحديث الحالات."
+        }
+    }
+}

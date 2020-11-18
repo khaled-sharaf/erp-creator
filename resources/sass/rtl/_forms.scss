@@ -1,0 +1,67 @@
+
+// forms
+
+.custom-file-input:lang(ar) ~ .custom-file-label::after {
+    content: 'تصفح';
+}
+.custom-file-label::after {
+    left: 0;
+    right: auto;
+}
+
+
+
+.global-form-handel {
+    .form-group {
+        &.form-group-input {
+            > label {
+
+                &.required {
+                    &:after {
+                        left: -7px;
+                        right: auto;
+                    }
+                }
+            }
+            .form-control {
+
+            }
+        }
+    }
+
+
+    .custom-control.custom-switch {
+        padding-left: 0;
+        padding-right: 2.25rem;
+        .custom-control-input {
+            right: 0;
+            left: auto;
+        }
+        .custom-control-label {
+            &:before {
+                left: auto;
+                right: -2.25rem;
+            }
+            &:after {
+                left: auto;
+                right: calc(-2.25rem + 13px);
+            }
+        }
+    }
+}
+
+
+.form-title {
+    .text {
+        padding-left: 0;
+        padding-right: 17px;
+        &:before {
+            right: 0px;
+            left: auto;
+        }
+        &:after {
+            right: 13px;
+            left: auto;
+        }
+    }
+}

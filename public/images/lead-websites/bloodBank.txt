@@ -1,0 +1,41 @@
+guarded تحمي ايه من الحقول 
+Client::Create([بتاخد array
+cascaded في ال relation بتمسح كلا من ال forien key and the table belongs to it
+
+Vedioes Url: https://www.youtube.com/playlist?list=PLz4BC3wHup-FBclsjU8jrWyABOILXFMWy
+
+????????????
+ما الفرق بين ال namespaace 
+و ال prifix 
+عند عمل Route::group
+/////////////////////////
+@include بتاخد قيمه و اراي ال اراي ديه بنحطها امتي بنستخدمها اواي 
+@include($user, [
+'' => '',
+'' => ''
+])
+
+ما هو ال Accept 
+اللي اتحط في ال header 
+اثناء عمل ال posts
+في الفيديو
+و ايه هيا الفانكشن اللي موجوده في 
+exceptions->handler->unauthentecated() ???
+في فيديو شرح الويب سيرفس بشكل موسع الدقيقه
+1:05:00
+
+users m-to-m roles
+roles m-to-m permissions
+//Spatie package users m-to-m permissions 
+
+//عمل notification 
+عن طريق make:notification
+
+unauthenticated laravel ديه فانكشن مستخدمه في ال 
+API عشان لو المستخدم من مسجل دخول بدل متظهر صفحه ال 
+login تظهر رساله انو مش مسجل علي هيئه 
+Json data
+و بنحط Accept 
+في ال Header 
+عشان يقدر يقرأ ال Json data 
+اللي مبعوتاله

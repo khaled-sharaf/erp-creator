@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/webdevelopment",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\WebDevelopment\\Providers\\WebDevelopmentServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\WebDevelopment\\": ""
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Common",
+    "alias": "common",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Common\\Providers\\CommonServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

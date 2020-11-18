@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/projectmanagement",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ProjectManagement\\Providers\\ProjectManagementServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ProjectManagement\\": ""
+        }
+    }
+}

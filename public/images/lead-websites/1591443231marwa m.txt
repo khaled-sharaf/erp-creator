@@ -1,0 +1,63 @@
+Laravel 6
+https://laracasts.com/series/whats-new-in-laravel-6?fbclid=IwAR3ipVqDYyjkm8jQqpdqyBm61UbZItJFX9pOKzYtApJ0NQXf-wcQjD2xj60
+
+api auth
+https://gistlog.co/JacobBennett/090369fbab0b31130b51
+
+### Extension for VScode 
+# Beauty (yhpnoraa)
+# comment-autocomplete (axetroy)
+# phpdoc-comment-vscode-plugin  ::: selecting the function line then, ctrl+E write" >add phpdoc comment "
+# IntelliSense for CSS class names in HTML
+# Auto Import
+# Bracket Pair Colorizer
+# indent-rainbow
+# Auto rename Tag
+# Auto Comment Blocks
+# JavaScript (ES6) code snippets
+# Code Spell Checker
+# Vetur
+# phpfmt - PHP formatter (or) Prettier - Code formatter
+# REST Client (Usage: clicking on send request -> opining a window with all data)
+# Live Sass Compiler
+# Live Server
+# Emmet
+# Markdownlint (or) auto open markdown preview
+# Css Peek (Usage: Control + Hover over the css class in Html)
+# Highlights matching tag
+
+# IntelliSensse for css class names in HTML
+# Path IntelliSensse 
+# JavaScript (ES6) code snippets for importing use in js
+# Project Manager 3M downloads for switching between multiple projects. beside the utility of add project to workspace which by default in VsCode.
+# Indenticator
+# Lorem ipsum by write: lorem + tab
+# Polacode لعمل حفظ للكود بنفس الشكل المنظم المكتوب فيه بال editor 
+
+
+
+Laravel Decomentation(Eloquent): https://laravel.com/docs/6.x/eloquent
+
+
+node.js + Mongo
+Vue X (State Management) + axios(Api Fetching)
+
+passport for (API) 
+Roles Authentications for LARACAST
+
+
+**Create the branch on your local machine and switch in this branch :
+$ git checkout -b [name_of_your_new_branch]
+$ git branck -l   -> displaying the branch names
+
+Then you need to apply to merge changes if your branch is derivated from develop you need to do :
+$ git merge [name_of_your_remote]/develop
+
+Delete a branch on your local filesystem :
+$ git branch -d [name_of_your_new_branch]
+
+
+Basic writing and formatting syntax -> for (Markdown)
+https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+
+" وعزتي وجلالي لأدبرن الأمر لمن لا حيلة له حتى يتعجب أصحاب الحيل "

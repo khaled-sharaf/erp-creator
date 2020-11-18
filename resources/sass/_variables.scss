@@ -1,0 +1,49 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+
+$vs-component-line-height: 1 !default;
+$vs-dropdown-min-width: 200px !default;
+
+
+.meeting_done {
+    background-color: #27ae60 !important;
+    color: #FFF !important;
+}
+.meeting_next_meeting {
+    background-color: #2980b9 !important;
+    color: #FFF !important;
+}
+.meeting_project_delay {
+    background-color: #8e44ad !important;
+    color: #FFF !important;
+}
+.meeting_refused_offer {
+    background-color: #2c3e50 !important;
+    color: #FFF !important;
+}
+.meeting_rejected {
+    background-color: #d63031 !important;
+    color: #FFF !important;
+}
+.meeting_none {
+    background-color: #333 !important;
+    color: #FFF !important;
+}

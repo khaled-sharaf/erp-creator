@@ -1,0 +1,11 @@
+{
+    "HR": true,
+    "CRM": true,
+    "Accounting": true,
+    "Design": true,
+    "Note": true,
+    "ProjectManagement": true,
+    "WebDevelopment": true,
+    "Common": true,
+    "Setting": true
+}

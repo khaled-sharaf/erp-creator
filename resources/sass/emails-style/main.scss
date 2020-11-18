@@ -1,0 +1,227 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Nunito", sans-serif !important;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.email-wrapper {
+    background-color: #F5F5F5;
+    min-height: 100vh;
+    font-family: "Nunito", sans-serif !important;
+    @media (max-width: 400px) {
+        font-size: 13px;
+    }
+
+
+    .rtl {
+        direction: rtl !important;
+        font-family: 'Cairo', sans-serif, 'Arial', 'Verdana' !important;
+        text-align: right !important;
+    }
+
+    .ltr {
+        direction: ltr !important;
+        font-family: "Nunito", sans-serif !important;
+        text-align: left !important;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .d-block { display: block; }
+    .d-inline-block { display: inline-block; }
+    .d-none { display: none; }
+    .float-left, .f-left { float: left; }
+    .float-right, .f-right { float: right; }
+    .text-left { text-align: left; }
+    .text-right { text-align: right; }
+    /**********************************************/
+
+    .main-header {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        overflow: hidden;
+        .logo {
+            float: left;
+            .img {
+                height: 90px;
+                @media (max-width: 768px) {
+                    height: 70px;
+                }
+                @media (max-width: 500px) {
+                    height: 60px;
+                }
+                @media (max-width: 400px) {
+                    height: 45px;
+                }
+            }
+        }
+
+        .header-info {
+            padding-top: 12px;
+            float: right;
+            text-align: right;
+            @media (max-width: 768px) {
+                padding-top: 0px;
+            }
+            .line {
+            }
+        }
+    }
+    /* ./main-header ************************************/
+
+    .main-content {
+        background-color: #FFF;
+        border-radius: 3px;
+        .header-content {
+            .background-message {
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                // background-color: #d41c22;
+                background-color: #333;
+                text-align: center;
+                padding: 15px 0;
+                .image {
+                    img {
+                        width: 70px;
+                        opacity: 1;
+                        @media (max-width: 768px) {
+                            width: 50px;
+                        }
+                        @media (max-width: 500px) {
+                        }
+                    }
+                }
+            }
+        }
+
+        .mail-content {
+            border: 1px solid #DDD;
+
+            .mail-subject {
+                padding: 20px 0;
+                text-align: center;
+                margin-bottom: 20px;
+                border-top: 0;
+                .subject {
+                    font-weight: bold;
+                    @media (max-width: 768px) {
+                        font-size: 28px;
+                    }
+                    @media (max-width: 500px) {
+                        font-size: 24px;
+                    }
+                }
+            }
+            /* ./mail-subject ************************************/
+
+
+            .message {
+                padding: 15px;
+                word-wrap: break-word;
+                // word-break: break-all;
+                @media (min-width: 500px) {
+                    width: 80%;
+                    margin: auto;
+                }
+            }
+
+        }
+        /* ./mail-content ************************************/
+
+    }
+    /* ./main-content ************************************/
+
+
+    /* ************************************************/
+    .main-footer {
+        margin-top: 70px;
+        text-align: center;
+        .social {
+            .link {
+                width: 30px;
+                height: 30px;
+                margin: 0 2px;
+                display: inline-block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .copyright {
+            border-top: 1px solid #CCC;
+            padding: 25px 0;
+            color: #888;
+            margin-top: 25px;
+            .mark {
+                color: #555;
+                cursor: pointer;
+            }
+        }
+    }
+    /* ./main-footer ************************************/
+
+}

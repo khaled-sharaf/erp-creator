@@ -1,0 +1,67 @@
+.table-filters {
+    tr {
+        &.tr-total {
+            border-top: 3px solid #555;
+            border-bottom: 3px solid #555;
+        }
+        td {
+            max-width: 300px;
+            .btn-table-actions {
+                margin: 1px 0;
+                padding: 3px 5px;
+                min-width: 22px;
+                font-size: 0.62rem;
+                width: max-content;
+            }
+        }
+
+        td, th {
+            .light {
+                color: #FFF !important;
+                font-size: 103%;
+                font-weight: bold;
+            }
+            &.permission {
+                background-color: #14bac7;
+                color: #FFF !important;
+            }
+            &.check_in {
+                background-color: #5a43c1;
+                color: #FFF !important;
+            }
+            &.check_out {
+                background-color: #f18e3e;
+                color: #FFF !important;
+            }
+            &.overtime {
+                background-color: #17b17c;
+                color: #FFF !important;
+            }
+            &.absent {
+                background-color: #e90e2b;
+                color: #FFF !important;
+            }
+        }
+
+        &.absent {
+            background-color: rgba(#e90e2b, 0.2);
+        }
+        &.vacation-day {
+            background-color: rgba(#f3e526, 0.4);
+        }
+    }
+
+
+
+
+    .light-purple {
+        color: #5a43c1;
+        font-weight: bold;
+        font-size: 102%;
+    }
+
+    .light-blue {
+        color: #0d76d8;
+        font-weight: bold;
+    }
+}

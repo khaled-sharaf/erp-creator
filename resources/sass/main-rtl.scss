@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,600,700&display=swap&subset=arabic');
+
+$lang: ltr;
+
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './rtl/wrappers';
+@import './rtl/navbar';
+@import './rtl/sidebar';
+@import './rtl/datatables';
+@import './rtl/forms';
+@import './rtl/profile';
+@import './rtl/reports';
+
+body {
+    direction: rtl;
+    text-align: right !important;
+    font-family: 'Cairo', sans-serif, 'Arial', 'Verdana' !important;
+}
+
+.navbar-nav {
+    padding-right: 0;
+}
+.nav-links-right {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+
+
+.list-group {
+    padding: {
+        right: 0;
+    }
+}
+
+
+
+
+
+
+// adminlte ***************
+
+// dashboard
+.small-box .icon > i {
+    left: 15px;
+    right: auto;
+}
+
+
+// sidebar
+.layout-fixed .main-sidebar {
+    right: 0;
+    left: auto;
+}
+.sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar:before {
+    margin-right: -250px;
+    margin-left: auto;
+}
+.main-sidebar, .main-sidebar:before {
+    transition: margin-right 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 4.6rem !important;
+        margin-left: auto !important;
+    }
+    .sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar:before {
+        margin-right: 0;
+        margin-left: auto;
+        width: 4.6rem;
+    }
+}
+@media (min-width: 576px) {
+    .content-wrapper, .main-footer, .main-header {
+        transition: margin-right 0.3s ease-in-out;
+        margin-right: 0; // changed to remove sidebar from 250px
+        margin-left: 0;
+    }
+    .sidebar-collapse .content-wrapper, .sidebar-collapse .main-footer, .sidebar-collapse .main-header {
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .main-sidebar, .main-sidebar:before {
+        margin-right: -250px;
+        margin-left: 0;
+    }
+    .content-wrapper, .content-wrapper:before, .main-footer, .main-footer:before, .main-header, .main-header:before {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sidebar-open .main-sidebar, .sidebar-open .main-sidebar:before {
+        margin-right: 0;
+    }
+}
+
+// links in sidebar
+
+.nav {
+    padding-right: 0;
+}
+.sidebar .nav-link p, .main-sidebar .brand-text, .sidebar .user-panel .info {
+    transition: margin-right 0.3s linear;
+}
+.nav-sidebar {
+    .nav-link > p > .right {
+        right: auto;
+        left: 1rem;
+    }
+    > .nav-item .nav-icon {
+        margin-left: .2rem;
+        margin-right: auto;
+    }
+    .menu-open > .nav-link i.right {
+        transform: rotate(90deg);
+    }
+}
+
+// companies
+.btn.maximize-table {
+    float: left;
+}
+.box-profile .list-group-item {
+    a {
+        float: left !important;
+    }
+}
+#modal_location_hotel {
+    .modal-header {
+        button.close {
+            margin: {
+                left: 0 !important;
+                right: 0 !important;
+            }
+        }
+    }
+}
+
+// products
+
+.profile-wrapper {
+    .offers-in-profile {
+        .offer {
+            .list-group {
+                .list-group-item {
+                    > a {
+                        float: left !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom-control.custom-checkbox {
+    right: 5px;
+    padding: {
+        left: 0;
+        right: 1.5rem;
+    }
+    .custom-control-label {
+        &:before, &:after {
+            right: -1.5rem;
+            left: auto;
+        }
+    }
+}
+
+.col-details.plus {
+    label {
+        position: relative;
+        right: -17px;
+        left: auto;
+    }
+}
+
+.form-add-sales-in-sweetalert {
+    padding: 20px 60px;
+}
+
+
+/****************************************************/
+
+
+/*********************************************************************************/
+/* header components */
+.header-comp {
+    .breadcrumb {
+        .breadcrumb-item {
+            & + .breadcrumb-item {
+                padding-left: 0;
+                padding-right: 0.5rem;
+                &:before {
+                    padding-left: 0.5rem;
+                    padding-right: 0;
+                    content: "\\";
+                }
+            }
+        }
+    }
+
+    .btn-plus-global {
+        .menu-nav {
+            right: auto;
+            left: 2px;
+            transform-origin: top left;
+        }
+    }
+}
+/****************************************************/
+
+.select2-container, .select2-dropdown {
+    text-align: right !important;
+}
+
+/****************************************************/

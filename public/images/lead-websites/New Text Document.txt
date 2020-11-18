@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        header {
+            background: 
+                linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ),
+                url(./0.jpg);
+            background-size: cover;
+            height: 75vh;
+            }
+
+            .title {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            }
+            h1 {
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 3rem;
+            white-space: nowrap;
+            }
+            h2 {
+            font-size: 2rem;
+            }
+            p {
+            margin: 0;
+            /* font-size: 1.3rem; */
+            font-size: medium;
+            padding-top: 2rem;
+            max-width: 39rem;
+            }
+
+            main {
+            max-width: 500px;
+            margin: 20px auto;
+            }
+        .over-view{
+            background-color: #eee;
+            overflow-x: hidden;
+            padding: 7rem 0rem;
+        }
+        @media (max-width: 426px){
+            .over-view .card{
+                margin: 0px 25px 3rem;
+            }
+        }
+        .container-card-img {
+            position: relative;
+        }
+        /* .container-card-img:hover .image-caption{
+            
+        } */
+        .image-caption {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+        .card{
+            text-align: center;
+            border: none;
+            background-color: transparent;
+        }
+        .card-title{
+            color: red;
+            font-size: medium;
+        }
+        .card-text{
+            padding-top: 0px;
+            font-size: smaller;
+        }
+        .card-img-top{
+            height: 13rem;
+            border-radius: 12px;
+        }
+        /* .image-container{
+            background: url(./0.jpg);
+            width: 100%;
+            height: 70vh;
+            background-size: cover;
+        } */
+        /* .image-layer{
+            position: absolute;
+            background-color: red;
+            width: 100vw;*/
+            /* height: 50vh; */
+            /* height: calc( 100% - 3.2rem );
+            z-index: 22;
+        }  */
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="title">
+          <h1>Services</h1>
+          <p>By combining practical industry-specific know-how with cutting-edge business management practices we ensure our clients get increased efficiency and better business performance.</p>
+        </div>
+    </header>
+
+    <section class="over-view">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="max-width: 30rem;">
+                        <div class="container-card-img">
+                            <img class="card-img-top" src="./business facts.jpg" alt="Card image cap">
+                            <div class="image-caption"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Bussiness Solution</h5>
+                            <!-- while providing one-stop “mission control” -->
+                            <p class="card-text text-muted">OTG’ end-to-end business solutions are a unique combination of business and technology covering all your enterprise operations</p>
+                            <a href="#" class="btn btn-link text-dark font-weight-bold">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="max-width: 30rem;">
+                        <div class="container-card-img">
+                            <img class="card-img-top" src="./unnamed.jpg" alt="Card image cap">
+                            <div class="image-caption"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Software</h5>
+                            <p class="card-text text-muted">Development of reliable and scalable software solutions for any OS, browser and device. We bring together the latest IT advancements to deliver custom solutions and products that perfectly fit the needs of their users.</p>
+                            <a href="#" class="btn btn-link text-dark font-weight-bold">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="max-width: 30rem;">
+                        <div class="container-card-img">
+                            <img class="card-img-top" src="./unnamed (1).jpg" alt="Card image cap">
+                            <div class="image-caption"></div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Light Current</h5>
+                            <p class="card-text text-muted">OTG provides services covering project budgeting, construction, engineering, commercial, health care, hospitality, institutional and industrial projects.</p>
+                            <a href="#" class="btn btn-link text-dark font-weight-bold">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="image-layer">
+        <img class="image-fluid w-100 image-container" src="./0.jpg" alt="">
+    </div> -->
+    <!-- <div class="image-container"></div> -->
+    
+
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

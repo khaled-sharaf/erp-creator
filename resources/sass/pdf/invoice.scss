@@ -1,0 +1,176 @@
+
+@import './pdf-style';
+
+
+.page-header {
+    .pdf-title {
+        float: right;
+        text-align: left;
+        color: #000;
+        width: 150px;
+    }
+    border-bottom: 1px solid $mainColorDark;
+    padding-bottom: 10px;
+}
+
+
+
+
+.footer {
+    text-align: center;
+    .address {
+        border-top: 1px solid $mainColorDark;
+        padding-top: 10px;
+        .text {
+
+        }
+    }
+}
+
+.wrapper-content {
+    .content {
+        .page-title {
+            color: $mainColorDark;
+            font-size: 26px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            .label-page {
+                display: inline-block;
+                font-size: 35px;
+            }
+        }
+
+
+        .dates {
+            overflow: hidden;
+            .date {
+                float: left;
+                margin-right: 1%;
+                width: 24%;
+                margin-bottom: 10px;
+                &.address {
+                    width: auto !important;
+                }
+                .header {
+                    color: $mainColor;
+                    font-weight: bold;
+                }
+                .value {
+                    color: #333;
+                    font-size: 13px;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+
+        .client-data {
+            margin-top: 10px;
+            .label {
+                width: 140px;
+                float: left;
+                color: $mainColor;
+                display: inline-block;
+                font-weight: bold;
+            }
+
+            .value {
+                font-weight: bold;
+            }
+        }
+
+        .services {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            .custom-table {
+                font-size: 13px;
+                border-top: 2px solid $mainColorDark;
+                border-bottom: 2px solid $mainColorDark;
+                .side {
+                    width: 35%;
+                    float: left;
+                    padding: 4px 5px;
+                    color: #222;
+                    &.price {
+                        width: 25%;
+                        text-align: right;
+                    }
+                }
+                .head {
+                    .row {
+                        border-bottom: 2px solid $mainColorDark;
+                    }
+                    .side {
+                        color: #222;
+                        font-weight: bold;
+                        color: $mainColor;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        // text-align: center;
+                    }
+                }
+                .body {
+                    .row.active {
+                        border-bottom: 1px solid #DDD;
+                    }
+                    .side {
+                        .amount {
+                            font-weight: bold;
+                            color: #333;
+                        }
+                        &.price {
+                        }
+                    }
+                    padding-bottom: 7px;
+                }
+            }
+
+            .payments {
+                overflow: hidden;
+                margin-top: 10px;
+                .wrapper-payments {
+                    float: right;
+                    width: 45%;
+                    border-bottom: 2px solid $mainColorDark;
+                    padding-bottom: 5px;
+                    .row {
+                        margin: 3px 0;
+                        .side {
+                            float: left;
+                            text-align: right;
+                            width: 30%;
+                            padding-right: 2%;
+                            &.title {
+                                padding: 0;
+                                width: 67%;
+                                color: $mainColor;
+                                font-weight: bold;
+                                text-align: left;
+                            }
+                            .price {
+                                font-weight: bold;
+                            }
+                        }
+                        &.row-services-amount {
+                            border-bottom: 1px solid #000;
+                            padding-bottom: 3px;
+                            margin-bottom: 3px;
+                        }
+                        &.row-paid-amount {
+                            .side {
+                                &.title {
+                                    color: #333;
+                                    font-style: italic;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .terms {
+            margin-top: 20px;
+        }
+    }
+}

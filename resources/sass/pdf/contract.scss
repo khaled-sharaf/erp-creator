@@ -1,0 +1,280 @@
+
+@import './pdf-style';
+
+
+
+
+
+body {
+    direction: rtl;
+    text-align: right !important;
+    color: #333;
+}
+
+.page-header {
+    .pdf-title {
+        float: right;
+        text-align: left;
+        color: #000;
+        width: 150px;
+    }
+    border-bottom: 1px solid $mainColorDark;
+    padding-bottom: 10px;
+}
+
+
+.footer {
+    text-align: center;
+    .signature {
+        width: 50%;
+        .title {
+        }
+        .signature-place {
+            line-height: 2;
+        }
+    }
+}
+
+.wrapper-content {
+    margin-top: 5px;
+    padding: 10px;
+    .content {
+        z-index: 2;
+
+        .page-title {
+            direction: ltr;
+            text-align: left;
+            color: #000;
+            font-size: 24px;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+            margin-top: 0;
+            .label-page {
+                display: inline-block;
+                font-size: 30px;
+            }
+        }
+
+
+        .introduction {
+            .line.title {
+                margin-top: 10px;
+                .text {
+                    font-size: 20px;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+
+.header-content {
+    .date-into {
+        width: 79%;
+    }
+    .contract-number {
+        width: 16%;
+        text-align: left;
+        padding: 0 2%;
+        font-weight: bold;
+        color: $mainColorDark;
+        font-size: 26px;
+    }
+    .wrapper-header-content {
+        margin-top: 5px;
+    }
+    .first-part, .second-part {
+        float: right !important;
+        width: 47%;
+        .wrapper-part {
+            padding: 0;
+        }
+        .part-title {
+            margin-top: 10px;
+            margin-bottom: 3px;
+            .text {
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+
+
+// .services {
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//     .custom-table {
+//         font-size: 12px;
+//         border: 1px solid #CCC;
+//         border-radius: 2px;
+//         .side {
+//             width: 40%;
+//             float: right;
+//             padding: 3px 5px;
+//             border-left: 1px solid #CCC;
+//             color: #222;
+//             &.price {
+//                 border-left: none;
+//                 width: 15%;
+//             }
+//         }
+//         .body, .foot {
+//             .row {
+//                 // border-bottom: 1px solid #CCC;
+//             }
+//         }
+//         .head {
+//             .side {
+//                 color: #222;
+//                 font-weight: bold;
+//             }
+//             border-bottom: 1px solid #BBB;
+//         }
+//         .body {
+//             border-bottom: 1px solid #BBB;
+//             .side {
+//                 .amount {
+//                     font-weight: bold;
+//                     color: #0ba75e;
+//                 }
+//             }
+//         }
+//         .foot {
+//             font-weight: bold;
+//             .row {
+//                 &.row-total-amount {
+//                     background-color: #EEE;
+//                     .side {
+//                         color: #cf1938;
+//                         font-size: 14px;
+//                     }
+//                 }
+//                 &.row-tax-amount {
+//                     .side {
+//                         color: #222;
+//                         font-size: 13px;
+//                     }
+//                 }
+//                 &.row-services-amount {
+//                     .side {
+//                         color: #222;
+//                         font-size: 13px;
+//                     }
+//                 }
+//             }
+//         }
+
+//     }
+// }
+
+.services {
+    direction: ltr;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    .custom-table {
+        font-size: 13px;
+        border-top: 2px solid $mainColorDark;
+        border-bottom: 2px solid $mainColorDark;
+        .side {
+            width: 35%;
+            float: left;
+            padding: 4px 5px;
+            color: #222;
+            &.price {
+                width: 25%;
+                text-align: right;
+            }
+        }
+        .head {
+            .row {
+                border-bottom: 2px solid $mainColorDark;
+            }
+            .side {
+                color: #222;
+                font-weight: bold;
+                color: $mainColor;
+                text-transform: uppercase;
+                font-size: 14px;
+                // text-align: center;
+            }
+        }
+        .body {
+            .row.active {
+                border-bottom: 1px solid #DDD;
+            }
+            .side {
+                .amount {
+                    font-weight: bold;
+                    color: #333;
+                }
+                &.price {
+                }
+            }
+            padding-bottom: 7px;
+        }
+    }
+
+    .payments {
+        overflow: hidden;
+        margin-top: 10px;
+        .wrapper-payments {
+            float: right;
+            width: 45%;
+            border-bottom: 2px solid $mainColorDark;
+            padding-bottom: 5px;
+            .row {
+                margin: 3px 0;
+                .side {
+                    float: left;
+                    text-align: right;
+                    width: 30%;
+                    padding-right: 2%;
+                    &.title {
+                        padding: 0;
+                        width: 67%;
+                        color: $mainColor;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+                    .price {
+                        font-weight: bold;
+                    }
+                }
+                &.row-services-amount {
+                    border-bottom: 1px solid #000;
+                    padding-bottom: 3px;
+                    margin-bottom: 3px;
+                }
+                &.row-paid-amount {
+                    .side {
+                        &.title {
+                            color: #333;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.terms {
+    border-bottom: 2px solid $mainColorDark;
+    font-size: 11px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .title-center {
+        font-size: 18px;
+        color: $mainColorDark;
+        margin-bottom: 10px;
+        text-align: center;
+        .text {
+            // border-bottom: 2px solid $mainColorDark;
+        }
+    }
+}
